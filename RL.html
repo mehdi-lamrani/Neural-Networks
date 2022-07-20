@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>3346d075db8f4539bc14b05463847385</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell markdown" id="1k4pP4G4RU8z">
+<h1 id="tensorflow-tutorial-16">TensorFlow Tutorial #16</h1>
+<h1 id="reinforcement-learning-q-learning">Reinforcement Learning (Q-Learning)</h1>
+<p>by <a href="http://www.hvass-labs.org/">Magnus Erik Hvass Pedersen</a> / <a href="https://github.com/Hvass-Labs/TensorFlow-Tutorials">GitHub</a> / <a href="https://www.youtube.com/playlist?list=PL9Hr9sNUjfsmEu1ZniY0XpHSzl5uihcXZ">Videos on YouTube</a></p>
+</div>
+<section id="introduction" class="cell markdown" id="bTw4zIqrRU84">
+<h2>Introduction</h2>
+<ul>
+<li><p>This tutorial is about so-called Reinforcement Learning in which an agent is learning how to navigate some environment,</p></li>
+<li><p>in this case Atari games from the 1970-80's. The agent does not know anything about the game and must learn how to play it from trial and error.</p></li>
+<li><p>The only information that is available to the agent is the screen output of the game, and whether the previous action resulted in a reward or penalty.</p></li>
+<li><p>This is a very difficult problem in Machine Learning / Artificial Intelligence, because</p>
+<ul>
+<li>The agent must learn to distinguish features in the game-images</li>
+<li>And then connect the occurence of certain features in the game-images with its own actions and a reward or penalty</li>
+<li>That may be deferred many steps into the future.</li>
+</ul></li>
+<li><p>This problem was first solved by the researchers from Google DeepMind. This tutorial is based on the main ideas from their early research papers (especially <a href="https://arxiv.org/abs/1312.5602">this</a> and <a href="http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html">this</a>), although we make several changes because the original DeepMind algorithm was awkward and over-complicated in some ways.</p></li>
+<li><p>But it turns out that you still need several tricks in order to stabilize the training of the agent, so the implementation in this tutorial is unfortunately also somewhat complicated.</p></li>
+<li><p>The basic idea is to have the agent estimate so-called Q-values whenever it sees an image from the game-environment.</p></li>
+<li><p>The Q-values tell the agent which action is most likely to lead to the highest cumulative reward in the future.</p></li>
+<li><p>The problem is then reduced to finding these Q-values and storing them for later retrieval using a function approximator.</p></li>
+<li><p>This builds on some of the previous tutorials.</p></li>
+<li><p>You should be familiar with TensorFlow and Convolutional Neural Networks from Tutorial #01 and #02.</p></li>
+<li><p>It will also be helpful if you are familiar with one of the builder APIs in Tutorials #03 or #03-B.</p></li>
+</ul>
+</section>
+<section id="the-problem" class="cell markdown" id="Uf4cljI9RU85">
+<h2>The Problem</h2>
+<ul>
+<li><p>This tutorial uses the Atari game Breakout, where the player or agent is supposed to hit a ball with a paddle, thus avoiding death while scoring points when the ball smashes pieces of a wall.</p></li>
+<li><p>When a human learns to play a game like this, the first thing to figure out is what part of the game environment you are controlling - in this case the paddle at the bottom.</p></li>
+<li><p>If you move right on the joystick then the paddle moves right and vice versa. * The next thing is to figure out what the goal of the game is - in this case to smash as many bricks in the wall as possible so as to maximize the score.</p></li>
+<li><p>Finally you need to learn what to avoid - in this case you must avoid dying by letting the ball pass beside the paddle.</p></li>
+<li><p>Below are shown 3 images from the game that demonstrate what we need our agent to learn.</p></li>
+<li><p>In the image to the left, the ball is going downwards and the agent must learn to move the paddle so as to hit the ball and avoid death.</p></li>
+<li><p>The image in the middle shows the paddle hitting the ball, which eventually leads to the image on the right where the ball smashes some bricks and scores points.</p></li>
+<li><p>The ball then continues downwards and the process repeats.</p></li>
+</ul>
+</section>
+<div class="cell markdown" id="WdwjIfqLRU85">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/4ec68ca9081630a4ddc9427d4f0b6411cbf532a2.png" alt="Illustration of the problem" /></p>
+</div>
+<div class="cell markdown" id="9TIVXOM3RU86">
+<ul>
+<li>The problem is that there are 10 states between the ball going downwards and the paddle hitting the ball</li>
+<li>And there are an additional 18 states before the reward is obtained when the ball hits the wall and smashes some bricks.</li>
+<li>How can we teach an agent to connect these three situations and generalize to similar situations?</li>
+<li>The answer is to use so-called Reinforcement Learning with a Neural Network, as shown in this tutorial.</li>
+</ul>
+</div>
+<section id="q-learning" class="cell markdown" id="84Y-9grRRU86">
+<h2>Q-Learning</h2>
+</section>
+<div class="cell markdown" id="GUo4jadtRU87">
+<ul>
+<li><p>One of the simplest ways of doing Reinforcement Learning is called Q-learning.</p></li>
+<li><p>Here we want to estimate so-called Q-values which are also called action-values, because they map a state of the game-environment to a numerical value for each possible action that the agent may take.</p></li>
+<li><p>The Q-values indicate which action is expected to result in the highest future reward, thus telling the agent which action to take.</p></li>
+<li><p>Unfortunately we do not know what the Q-values are supposed to be, so we have to estimate them somehow.</p></li>
+<li><p>The Q-values are all initialized to zero and then updated repeatedly as new information is collected from the agent playing the game.</p></li>
+<li><p>When the agent scores a point then the Q-value must be updated with the new information.</p></li>
+<li><p>There are different formulas for updating Q-values, but the simplest is to set the new Q-value to the reward that was observed, plus the maximum Q-value for the following state of the game.</p></li>
+<li><p>This gives the total reward that the agent can expect from the current game-state and onwards.</p></li>
+<li><p>Typically we also multiply the max Q-value for the following state by a so-called discount-factor slightly below 1.</p></li>
+<li><p>This causes more distant rewards to contribute less to the Q-value, thus making the agent favour rewards that are closer in time. <br></p></li>
+<li><p>The formula for updating the Q-value is:</p></li>
+</ul>
+<pre><code>    Q-value for state and action = reward + discount * max Q-value for next state&#39;</code></pre>
+<ul>
+<li>In academic papers, this is typically written with mathematical symbols like this:</li>
+</ul>
+<p><span class="math display">$$
+    Q(s_{t},a_{t}) \leftarrow \underbrace{r_{t}}_{\rm reward} + \underbrace{\gamma}_{\rm discount} \cdot \underbrace{\max_{a}Q(s_{t+1}, a)}_{\rm estimate~of~future~rewards}
+$$</span></p>
+<ul>
+<li>Furthermore, when the agent loses a life, then we know that the future reward is zero because the agent is dead, so we set the Q-value for that state to zero.</li>
+</ul>
+</div>
+<section id="simple-example" class="cell markdown" id="PspETEN-RU87">
+<h3>Simple Example</h3>
+<ul>
+<li><p>The images below demonstrate how Q-values are updated in a backwards sweep through the game-states that have previously been visited.</p></li>
+<li><p>In this simple example we assume all Q-values have been initialized to zero. The agent gets a reward of 1 point in the right-most image.</p></li>
+<li><p>This reward is then propagated backwards to the previous game-states, so when we see similar game-states in the future, we know that the given actions resulted in that reward.</p></li>
+<li><p>The discounting is an exponentially decreasing function.</p></li>
+<li><p>This example uses a discount-factor of 0.97 so the Q-value for the 3rd image is about <span class="math inline">0.885 ≃ 0.97<sup>4</sup></span> because it is 4 states prior to the state that actually received the reward.</p></li>
+<li><p>Similarly for the other states.</p></li>
+<li><p>This example only shows one Q-value per state, but in reality there is one Q-value for each possible action in the state, and the Q-values are updated in a backwards-sweep using the formula above.</p></li>
+<li><p>This is shown in the next section.</p></li>
+</ul>
+</section>
+<div class="cell markdown" id="qLsuKk7WRU88">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/7eae52600a8a32ce77f5318f8ab77cb846478385.png" alt="Q-values Simple Example" /></p>
+</div>
+<section id="detailed-example" class="cell markdown" id="488ujFeERU88">
+<h3>Detailed Example</h3>
+<ul>
+<li>This is a more detailed example showing the Q-values for two successive states of the game-environment and how to update them.</li>
+</ul>
+</section>
+<div class="cell markdown" id="YyN7k7kvRU89">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/c599e4e6000c08ad9f3de21f53c13c9f783c7381.png" alt="Q-values Detailed Example" /></p>
+</div>
+<div class="cell markdown" id="wsd_WYHIRU89">
+<ul>
+<li><p>The Q-values for the possible actions have been estimated by a Neural Network.</p></li>
+<li><p>For the action NOOP in state <span class="math inline"><em>t</em></span> the Q-value is estimated to be 2.900, which is the highest Q-value for that state so the agent takes that action</p></li>
+<li><p>i.e. the agent does not do anything between state <span class="math inline"><em>t</em></span> and <span class="math inline"><em>t</em> + 1</span> because NOOP means "No Operation".</p></li>
+<li><p>In state <span class="math inline"><em>t</em> + 1</span> the agent scores 4 points, but this is limited to 1 point in this implementation so as to stabilize the training. The maximum Q-value for state <span class="math inline"><em>t</em> + 1</span> is 1.830 for the action RIGHTFIRE.</p></li>
+<li><p>So if we select that action and continue to select the actions proposed by the Q-values estimated by the Neural Network, then the discounted sum of all the future rewards is expected to be 1.830.</p></li>
+<li><p>Now that we know the reward of taking the NOOP action from state <span class="math inline"><em>t</em></span> to <span class="math inline"><em>t</em> + 1</span>, we can update the Q-value to incorporate this new information. This uses the formula above:</p></li>
+</ul>
+<p><span class="math display">$$
+    Q(state_{t},NOOP) \leftarrow \underbrace{r_{t}}_{\rm reward} + \underbrace{\gamma}_{\rm discount} \cdot \underbrace{\max_{a}Q(state_{t+1}, a)}_{\rm estimate~of~future~rewards} = 1.0 + 0.97 \cdot 1.830 \simeq 2.775
+$$</span></p>
+<ul>
+<li><p>The new Q-value is 2.775 which is slightly lower than the previous estimate of 2.900.</p></li>
+<li><p>This Neural Network has already been trained for 150 hours so it is quite good at estimating Q-values, but earlier during the training, the estimated Q-values would be more different.</p></li>
+<li><p>The idea is to have the agent play many, many games and repeatedly update the estimates of the Q-values as more information about rewards and penalties becomes available.</p></li>
+<li><p>This will eventually lead to good estimates of the Q-values, provided the training is numerically stable, as discussed further below.</p></li>
+<li><p>By doing this, we create a connection between rewards and prior actions.</p></li>
+</ul>
+</div>
+<section id="motion-trace" class="cell markdown" id="YMA5muoFRU89">
+<h2>Motion Trace</h2>
+<ul>
+<li><p>If we only use a single image from the game-environment then we cannot tell which direction the ball is moving.</p></li>
+<li><p>The typical solution is to use multiple consecutive images to represent the state of the game-environment.</p></li>
+<li><p>This implementation uses another approach by processing the images from the game-environment in a motion-tracer that outputs two images as shown below.</p></li>
+<li><p>The left image is from the game-environment and the right image is the processed image, which shows traces of recent movements in the game-environment.</p></li>
+<li><p>In this case we can see that the ball is going downwards and has bounced off the right wall, and that the paddle has moved from the left to the right side of the screen.</p></li>
+<li><p>Note that the motion-tracer has only been tested for Breakout and partially tested for Space Invaders, so it may not work for games with more complicated graphics such as Doom.</p></li>
+</ul>
+</section>
+<div class="cell markdown" id="o9fjeuZHRU8-">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/50938d45ea0a13835582e33d3c32f1948a26b3c1.png" alt="Motion Trace" /></p>
+</div>
+<section id="training-stability" class="cell markdown" id="myOUFEcJRU8-">
+<h2>Training Stability</h2>
+<ul>
+<li><p>We need a function approximator that can take a state of the game-environment as input and produce as output an estimate of the Q-values for that state. We will use a Convolutional Neural Network for this.</p></li>
+<li><p>Although they have achieved great fame in recent years, they are actually a quite old technologies with many problems - one of which is training stability. * A significant part of the research for this tutorial was spent on tuning and stabilizing the training of the Neural Network.</p></li>
+<li><p>To understand why training stability is a problem, consider the 3 images below which show the game-environment in 3 consecutive states.</p></li>
+<li><p>At state <span class="math inline"><em>t</em></span> the agent is about to score a point, which happens in the following state <span class="math inline"><em>t</em> + 1</span>.</p></li>
+<li><p>Assuming all Q-values were zero prior to this, we should now set the Q-value for state <span class="math inline"><em>t</em> + 1</span> to be 1.0 and it should be 0.97 for state <span class="math inline"><em>t</em></span> if the discount-value is 0.97, according to the formula above for updating Q-values.</p></li>
+</ul>
+</section>
+<div class="cell markdown" id="n9geKzYQRU8-">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/a946a84f9b8e96a15699716afb743b997f05e499.png" alt="Training Stability" /></p>
+</div>
+<div class="cell markdown" id="0xGvHqeXRU8-">
+<ul>
+<li><p>If we were to train a Neural Network to estimate the Q-values for the two states <span class="math inline"><em>t</em></span> and <span class="math inline"><em>t</em> + 1</span> with Q-values 0.97 and 1.0, respectively, then the Neural Network will most likely be unable to distinguish properly between the images of these two states.</p></li>
+<li><p>As a result the Neural Network will also estimate a Q-value near 1.0 for state <span class="math inline"><em>t</em> + 2</span> because the images are so similar.</p></li>
+<li><p>But this is clearly wrong because the Q-values for state <span class="math inline"><em>t</em> + 2</span> should be zero as we do not know anything about future rewards at this point, and that is what the Q-values are supposed to estimate.</p></li>
+<li><p>If this is continued and the Neural Network is trained after every new game-state is observed, then it will quickly cause the estimated Q-values to explode.</p></li>
+<li><p>This is an artifact of training Neural Networks which must have sufficiently large and diverse training-sets.</p></li>
+<li><p>For this reason we will use a so-called Replay Memory so we can gather a large number of game-states and shuffle them during training of the Neural Network.</p></li>
+</ul>
+</div>
+<section id="flowchart" class="cell markdown" id="Kf-9xCdgRU8_">
+<h2>Flowchart</h2>
+<ul>
+<li><p>This flowchart shows roughly how Reinforcement Learning is implemented in this tutorial.<br />
+</p></li>
+<li><p>There are two main loops which are run sequentially until the Neural Network is sufficiently accurate at estimating Q-values.</p></li>
+<li><p>The first loop is for playing the game and recording data.</p></li>
+<li><p>This uses the Neural Network to estimate Q-values from a game-state.</p></li>
+<li><p>It then stores the game-state along with the corresponding Q-values and reward/penalty in the Replay Memory for later use.</p></li>
+<li><p>The other loop is activated when the Replay Memory is sufficiently full. First it makes a full backwards sweep through the Replay Memory to update the Q-values with the new rewards and penalties that have been observed.</p></li>
+<li><p>Then it performs an optimization run so as to train the Neural Network to better estimate these updated Q-values.</p></li>
+<li><p>There are many more details in the implementation, such as decreasing the learning-rate and increasing the fraction of the Replay Memory being used during training, but this flowchart shows the main ideas.</p></li>
+</ul>
+</section>
+<div class="cell markdown" id="Oeu9-4oWRU8_">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/6db37017566c3bc30412277df5f5e49fa6d0ce00.png" alt="Flowchart" /></p>
+</div>
+<section id="neural-network-architecture" class="cell markdown" id="6_k1yJimRU8_">
+<h2>Neural Network Architecture</h2>
+<ul>
+<li><p>The Neural Network used in this implementation has 3 convolutional layers, all of which have filter-size 3x3.</p></li>
+<li><p>The layers have 16, 32, and 64 output channels, respectively. The stride is 2 in the first two convolutional layers and 1 in the last layer.</p></li>
+<li><p>Following the 3 convolutional layers there are 4 fully-connected layers each with 1024 units and ReLU-activation.</p></li>
+<li><p>Then there is a single fully-connected layer with linear activation used as the output of the Neural Network.</p></li>
+<li><p>This architecture is different from those typically used in research papers from DeepMind and others.</p></li>
+<li><p>They often have large convolutional filter-sizes of 8x8 and 4x4 with high stride-values.</p></li>
+<li><p>This causes more aggressive down-sampling of the game-state images. They also typically have only a single fully-connected layer with 256 or 512 ReLU units.</p></li>
+<li><p>During the research for this tutorial, it was found that smaller filter-sizes and strides in the convolutional layers, combined with several fully-connected layers having more units, were necessary in order to have sufficiently accurate Q-values.</p></li>
+<li><p>The Neural Network architectures originally used by DeepMind appear to distort the Q-values quite significantly.</p></li>
+<li><p>A reason that their approach still worked, is possibly due to their use of a very large Replay Memory with 1 million states, and that the Neural Network did one mini-batch of training for each step of the game-environment, and some other tricks.</p></li>
+<li><p>The architecture used here is probably excessive but it takes several days of training to test each architecture, so it is left as an exercise for the reader to try and find a smaller Neural Network architecture that still performs well.</p></li>
+</ul>
+</section>
+<section id="installation" class="cell markdown" id="LgPGp6tJRU8_">
+<h2>Installation</h2>
+</section>
+<div class="cell markdown" id="SsU5-s9wRU9A">
+<p>The <a href="https://github.com/openai/gym">documentation</a> for OpenAI Gym currently suggests that you need to build it in order to install it. But if you just want to install the Atari games, then you only need to install a single pip-package by typing the following commands in a terminal.</p>
+</div>
+<div class="cell markdown" id="dBw2GFcgRU9A">
+<ul>
+<li>conda create --name tf-gym --clone tf</li>
+<li>source activate tf-gym</li>
+<li>pip install gym[atari]</li>
+</ul>
+</div>
+<div class="cell markdown" id="2ZkCOw4yRU9A">
+<p>This assumes you already have an Anaconda environment named <code>tf</code> which has TensorFlow installed, it will then be cloned to another environment named <code>tf-gym</code> where OpenAI Gym is also installed. This allows you to easily switch between your normal TensorFlow environment and another one which also contains OpenAI Gym.</p>
+</div>
+<div class="cell markdown" id="2ZcXWYvrRU9A">
+<p>You can also have two environments named <code>tf-gpu</code> and <code>tf-gpu-gym</code> for the GPU versions of TensorFlow.</p>
+</div>
+<section id="tensorflow-2" class="cell markdown" id="JwsQ2DObRU9A">
+<h2>TensorFlow 2</h2>
+<ul>
+<li>This tutorial was developed using TensorFlow v.1 back in the year 2016-2017. There have been significant API changes in TensorFlow v.2. This tutorial uses TF2 in "v.1 compatibility mode". It would be too big a job to keep updating these tutorials every time Google's engineers update the TensorFlow API, so this tutorial may eventually stop working.</li>
+</ul>
+</section>
+<section id="imports" class="cell markdown" id="xu2SVpFJjmJr">
+<h2>Imports</h2>
+</section>
+<div class="cell code" id="1VSCzPH7RU9B">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> gym</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span></code></pre></div>
+</div>
+<div class="cell code" id="YJSxxzYyRU9C" data-outputId="d5055120-f6f0-44a8-c5a4-b574ddf68df4">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use TensorFlow v.2 with this old v.1 code.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># E.g. placeholder variables and sessions have changed in TF2.</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow.compat.v1 <span class="im">as</span> tf</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>tf.disable_v2_behavior()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>WARNING:tensorflow:From /home/magnus/anaconda3/envs/tf2/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:88: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="l8yE_bJJRU9D">
+<p>The main source-code for Reinforcement Learning is located in the following module:</p>
+</div>
+<div class="cell code" id="VDD2ziTrRU9D">
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> reinforcement_learning <span class="im">as</span> rl</span></code></pre></div>
+</div>
+<div class="cell markdown" id="vKWMXI96RU9D">
+<p>This was developed using Python 3.6.0 (Anaconda) with package versions:</p>
+</div>
+<div class="cell code" id="zJLg-s_vRU9D" data-outputId="dbb3bca5-3c9e-4ec4-d4bd-5553fe2f7b0a">
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># TensorFlow</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>tf.__version__</span></code></pre></div>
+<div class="output execute_result" data-execution_count="4">
+<pre><code>&#39;2.1.0&#39;</code></pre>
+</div>
+</div>
+<div class="cell code" id="8bDD3Cl-RU9D" data-outputId="2f2bab99-864d-46be-aa79-741a8b55b490" data-scrolled="true">
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># OpenAI Gym</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>gym.__version__</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<pre><code>&#39;0.17.1&#39;</code></pre>
+</div>
+</div>
+<section id="game-environment" class="cell markdown" id="vNbDL2__RU9E">
+<h2>Game Environment</h2>
+<ul>
+<li>This is the name of the game-environment that we want to use in OpenAI Gym.</li>
+</ul>
+</section>
+<div class="cell code" id="Lq6QoxtKRU9E">
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>env_name <span class="op">=</span> <span class="st">&#39;Breakout-v0&#39;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># env_name = &#39;SpaceInvaders-v0&#39;</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="C_2UdJwjRU9E">
+<p>This is the base-directory for the TensorFlow checkpoints as well as various log-files.</p>
+</div>
+<div class="cell code" id="bpDOQco1RU9E">
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>rl.checkpoint_base_dir <span class="op">=</span> <span class="st">&#39;checkpoints_tutorial16/&#39;</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="pRiHaF30RU9F">
+<p>Once the base-dir has been set, you need to call this function to set all the paths that will be used. This will also create the checkpoint-dir if it does not already exist.</p>
+</div>
+<div class="cell code" id="kBluK1_mRU9F">
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>rl.update_paths(env_name<span class="op">=</span>env_name)</span></code></pre></div>
+</div>
+<section id="download-pre-trained-model" class="cell markdown" id="ueCOTikjRU9F">
+<h2>Download Pre-Trained Model</h2>
+<ul>
+<li>The original version of this tutorial provided some TensorFlow checkpoints with pre-trained models for download.</li>
+<li>But due to changes in both TensorFlow and OpenAI Gym, these pre-trained models cannot be loaded anymore so they have been deleted from the web-server. * You will therefore have to train your own model further below.</li>
+</ul>
+</section>
+<section id="create-agent" class="cell markdown" id="S3UnupwfRU9F">
+<h2>Create Agent</h2>
+<ul>
+<li>The Agent-class implements the main loop for playing the game, recording data and optimizing the Neural Network.</li>
+<li>We create an object-instance and need to set <code>training=True</code> because we want to use the replay-memory to record states and Q-values for plotting further below.</li>
+<li>We disable logging so this does not corrupt the logs from the actual training that was done previously. We can also set <code>render=True</code> but it will have no effect as long as <code>training==True</code>.</li>
+</ul>
+</section>
+<div class="cell code" id="Tw-A8J8IRU9F" data-outputId="e084d189-dc7a-4c04-9c75-69e53741d916" data-scrolled="true">
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>agent <span class="op">=</span> rl.Agent(env_name<span class="op">=</span>env_name,</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>                 training<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>                 render<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>                 use_logging<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>WARNING:tensorflow:From /home/magnus/development/TensorFlow-Tutorials/reinforcement_learning.py:1189: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /home/magnus/anaconda3/envs/tf2/lib/python3.6/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /home/magnus/development/TensorFlow-Tutorials/reinforcement_learning.py:1205: flatten (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Flatten instead.
+WARNING:tensorflow:From /home/magnus/development/TensorFlow-Tutorials/reinforcement_learning.py:1209: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /home/magnus/anaconda3/envs/tf2/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+Trying to restore last checkpoint ...
+INFO:tensorflow:Restoring parameters from checkpoints_tutorial16/Breakout-v0/checkpoint-1175644
+Restored checkpoint from: checkpoints_tutorial16/Breakout-v0/checkpoint-1175644
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="WZzHnfioRU9F">
+<p>The Neural Network is automatically instantiated by the Agent-class. We will create a direct reference for convenience.</p>
+</div>
+<div class="cell code" id="lyVxgxSCRU9G">
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> agent.model</span></code></pre></div>
+</div>
+<div class="cell markdown" id="6t1q2PvdRU9G">
+<p>Similarly, the Agent-class also allocates the replay-memory when <code>training==True</code>. The replay-memory will require more than 3 GB of RAM, so it should only be allocated when needed. We will need the replay-memory in this Notebook to record the states and Q-values we observe, so they can be plotted further below.</p>
+</div>
+<div class="cell code" id="hZd2SPSzRU9G">
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>replay_memory <span class="op">=</span> agent.replay_memory</span></code></pre></div>
+</div>
+<section id="training" class="cell markdown" id="WIPzt-IDRU9G">
+<h2>Training</h2>
+<ul>
+<li>The agent's <code>run()</code> function is used to play the game. This uses the Neural Network to estimate Q-values and hence determine the agent's actions.</li>
+<li>If <code>training==True</code> then it will also gather states and Q-values in the replay-memory and train the Neural Network when the replay-memory is sufficiently full.</li>
+<li>You can set <code>num_episodes=None</code> if you want an infinite loop that you would stop manually with <code>ctrl-c</code>.</li>
+<li>In this case we just set <code>num_episodes=1</code> because we are not actually interested in training the Neural Network any further, we merely want to collect some states and Q-values in the replay-memory so we can plot them below.</li>
+</ul>
+</section>
+<div class="cell code" id="qyvpnJvRRU9G" data-outputId="bf306868-8a48-420d-93cb-252ead7ba1a6" data-scrolled="true">
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>agent.run(num_episodes<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>2388:1176704	 Epsilon: 0.10	 Reward: 26.0	 Episode Mean: 26.0
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="b_B3XflMRU9G">
+<p>In training-mode, this function will output a line for each episode. The first counter is for the number of episodes that have been processed. The second counter is for the number of states that have been processed. These two counters are stored in the TensorFlow checkpoint along with the weights of the Neural Network, so you can restart the training e.g. if you only have one computer and need to train during the night.</p>
+<p>Note that the number of episodes is almost 90k. It is impractical to print that many lines in this Notebook, so the training is better done in a terminal window by running the following commands:</p>
+<pre><code>source activate tf-gpu-gym  # Activate your Python environment with TF and Gym.
+python reinforcement_learning.py --env Breakout-v0 --training</code></pre>
+</div>
+<section id="training-progress" class="cell markdown" id="TwYe54NvRU9H">
+<h2>Training Progress</h2>
+</section>
+<div class="cell markdown" id="K3vS9RDmRU9H">
+<p>Data is being logged during training so we can plot the progress afterwards. The reward for each episode and a running mean of the last 30 episodes are logged to file. Basic statistics for the Q-values in the replay-memory are also logged to file before each optimization run.</p>
+<p>This could be logged using TensorFlow and TensorBoard, but they were designed for logging variables of the TensorFlow graph and data that flows through the graph. In this case the data we want logged does not reside in the graph, so it becomes a bit awkward to use TensorFlow to log this data.</p>
+<p>We have therefore implemented a few small classes that can write and read these logs.</p>
+</div>
+<div class="cell code" id="SiOEvSXKRU9H">
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>log_q_values <span class="op">=</span> rl.LogQValues()</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>log_reward <span class="op">=</span> rl.LogReward()</span></code></pre></div>
+</div>
+<div class="cell markdown" id="IRzAvnPlRU9H">
+<p>We can now read the logs from file:</p>
+</div>
+<div class="cell code" id="CeSi8AZbRU9H" data-scrolled="true">
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>log_q_values.read()</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>log_reward.read()</span></code></pre></div>
+</div>
+<section id="training-progress-reward" class="cell markdown" id="tPKQfomeRU9H">
+<h3>Training Progress: Reward</h3>
+<p>This plot shows the reward for each episode during training, as well as the running mean of the last 30 episodes. Note how the reward varies greatly from one episode to the next, so it is difficult to say from this plot alone whether the agent is really improving during the training, although the running mean does appear to trend upwards slightly.</p>
+</section>
+<div class="cell code" id="x44ff7WhRU9I" data-outputId="735c6ac9-12ec-42cb-bfa0-4ec9f6f35721">
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>plt.plot(log_reward.count_states, log_reward.episode, label<span class="op">=</span><span class="st">&#39;Episode Reward&#39;</span>)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>plt.plot(log_reward.count_states, log_reward.mean, label<span class="op">=</span><span class="st">&#39;Mean of 30 episodes&#39;</span>)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;State-Count for Game Environment&#39;</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/d39b9bc71b6c4aad5f642da94e3750318fe70537.png" /></p>
+</div>
+</div>
+<section id="training-progress-q-values" class="cell markdown" id="rwcvUvZORU9I">
+<h3>Training Progress: Q-Values</h3>
+<p>The following plot shows the mean Q-values from the replay-memory prior to each run of the optimizer for the Neural Network. Note how the mean Q-values increase rapidly in the beginning and then they increase fairly steadily for 40 million states, after which they still trend upwards but somewhat more irregularly.</p>
+<p>The fast improvement in the beginning is probably due to (1) the use of a smaller replay-memory early in training so the Neural Network is optimized more often and the new information is used faster, (2) the backwards-sweeping of the replay-memory so the rewards are used to update the Q-values for many of the states, instead of just updating the Q-values for a single state, and (3) the replay-memory is balanced so at least half of each mini-batch contains states whose Q-values have high estimation-errors for the Neural Network.</p>
+<p>The <a href="https://arxiv.org/abs/1312.5602">original paper from DeepMind</a> showed much slower progress in the first phase of training, see Figure 2 in that paper but note that the Q-values are not directly comparable, possibly because they used a higher discount factor of 0.99 while we only used 0.97 here.</p>
+</section>
+<div class="cell code" id="I-kM4V6uRU9I" data-outputId="6bfb5b28-27bb-4bdd-afea-8c7626c79cfd" data-scrolled="true">
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>plt.plot(log_q_values.count_states, log_q_values.mean, label<span class="op">=</span><span class="st">&#39;Q-Value Mean&#39;</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;State-Count for Game Environment&#39;</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/dc7c592501cd49405078c23be5fe588359a643c0.png" /></p>
+</div>
+</div>
+<section id="testing" class="cell markdown" id="MrfOeCk1RU9I">
+<h2>Testing</h2>
+<ul>
+<li>When the agent and Neural Network is being trained, the so-called epsilon-probability is typically decreased from 1.0 to 0.1 over a large number of steps, after which the probability is held fixed at 0.1.</li>
+<li>This means the probability is 0.1 or 10% that the agent will select a random action in each step, otherwise it will select the action that has the highest Q-value. This is known as the epsilon-greedy policy.</li>
+<li>The choice of 0.1 for the epsilon-probability is a compromise between taking the actions that are already known to be good, versus exploring new actions that might lead to even higher rewards or might lead to death of the agent.</li>
+</ul>
+<p>During testing it is common to lower the epsilon-probability even further. We have set it to 0.01 as shown here:</p>
+</section>
+<div class="cell code" id="Ggo0ZO9JRU9J" data-outputId="a8a8de1d-5705-441c-bfaf-78c838831381">
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>agent.epsilon_greedy.epsilon_testing</span></code></pre></div>
+<div class="output execute_result" data-execution_count="17">
+<pre><code>0.01</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="oyfKbl7sRU9J">
+<p>We will now instruct the agent that it should no longer perform training by setting this boolean:</p>
+</div>
+<div class="cell code" id="mYKrMPFWRU9J">
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>agent.training <span class="op">=</span> <span class="va">False</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="WXHPmr4DRU9J">
+<p>We also reset the previous episode rewards.</p>
+</div>
+<div class="cell code" id="YEKZbQ6kRU9J">
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>agent.reset_episode_rewards()</span></code></pre></div>
+</div>
+<div class="cell markdown" id="ixAyd45dRU9J">
+<p>We can render the game-environment to screen so we can see the agent playing the game, by setting this boolean:</p>
+</div>
+<div class="cell code" id="hV43eTywRU9K">
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>agent.render <span class="op">=</span> <span class="va">True</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="gHQqYP8fRU9K">
+<p>We can now run a single episode by calling the <code>run()</code> function again. This should open a new window that shows the game being played by the agent. At the time of this writing, it was not possible to resize this tiny window, and the developers at OpenAI did not seem to care about this feature which should obviously be there.</p>
+</div>
+<div class="cell code" id="_5ttHiSeRU9K" data-outputId="2a36a5d5-2673-4a18-a440-6a7b88819141">
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>agent.run(num_episodes<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>2390:1176749	Q-min: 1.247	Q-max: 1.411	Lives: 5	Reward: 1.0	Episode Mean: 0.0
+2390:1176802	Q-min: 1.227	Q-max: 1.425	Lives: 5	Reward: 2.0	Episode Mean: 0.0
+2390:1176845	Q-min: 0.109	Q-max: 0.144	Lives: 4	Reward: 2.0	Episode Mean: 0.0
+2390:1176899	Q-min: 1.184	Q-max: 1.423	Lives: 4	Reward: 3.0	Episode Mean: 0.0
+2390:1176954	Q-min: 1.336	Q-max: 1.472	Lives: 4	Reward: 4.0	Episode Mean: 0.0
+2390:1177004	Q-min: 1.303	Q-max: 1.382	Lives: 4	Reward: 5.0	Episode Mean: 0.0
+2390:1177050	Q-min: 1.247	Q-max: 1.539	Lives: 4	Reward: 6.0	Episode Mean: 0.0
+2390:1177070	Q-min: 0.140	Q-max: 0.149	Lives: 3	Reward: 6.0	Episode Mean: 0.0
+2390:1177123	Q-min: 1.260	Q-max: 1.348	Lives: 3	Reward: 7.0	Episode Mean: 0.0
+2390:1177171	Q-min: 1.212	Q-max: 1.473	Lives: 3	Reward: 8.0	Episode Mean: 0.0
+2390:1177227	Q-min: 1.333	Q-max: 1.445	Lives: 3	Reward: 9.0	Episode Mean: 0.0
+2390:1177273	Q-min: 1.285	Q-max: 1.542	Lives: 3	Reward: 10.0	Episode Mean: 0.0
+2390:1177304	Q-min: 1.227	Q-max: 1.538	Lives: 3	Reward: 11.0	Episode Mean: 0.0
+2390:1177339	Q-min: 1.256	Q-max: 1.539	Lives: 3	Reward: 12.0	Episode Mean: 0.0
+2390:1177359	Q-min: 0.078	Q-max: 0.126	Lives: 2	Reward: 12.0	Episode Mean: 0.0
+2390:1177417	Q-min: 1.150	Q-max: 1.406	Lives: 2	Reward: 13.0	Episode Mean: 0.0
+2390:1177469	Q-min: 1.298	Q-max: 1.452	Lives: 2	Reward: 14.0	Episode Mean: 0.0
+2390:1177530	Q-min: 1.229	Q-max: 1.372	Lives: 2	Reward: 15.0	Episode Mean: 0.0
+2390:1177571	Q-min: 0.060	Q-max: 0.104	Lives: 1	Reward: 15.0	Episode Mean: 0.0
+2390:1177617	Q-min: 1.266	Q-max: 1.462	Lives: 1	Reward: 16.0	Episode Mean: 0.0
+2390:1177668	Q-min: 1.182	Q-max: 1.566	Lives: 1	Reward: 20.0	Episode Mean: 0.0
+2390:1177727	Q-min: 1.250	Q-max: 1.491	Lives: 1	Reward: 21.0	Episode Mean: 0.0
+2390:1177781	Q-min: 1.172	Q-max: 1.604	Lives: 1	Reward: 25.0	Episode Mean: 0.0
+2390:1177796	Q-min: 0.434	Q-max: 0.717	Lives: 0	Reward: 25.0	Episode Mean: 25.0
+</code></pre>
+</div>
+</div>
+<section id="mean-reward" class="cell markdown" id="1CGUCtuzRU9K">
+<h3>Mean Reward</h3>
+</section>
+<div class="cell markdown" id="cjXPEKP0RU9K">
+<p>The game-play is slightly random, both with regard to selecting actions using the epsilon-greedy policy, but also because the OpenAI Gym environment will repeat any action between 2-4 times, with the number chosen at random. So the reward of one episode is not an accurate estimate of the reward that can be expected in general from this agent.</p>
+<p>We need to run 30 or even 50 episodes to get a more accurate estimate of the reward that can be expected.</p>
+<p>We will first reset the previous episode rewards.</p>
+</div>
+<div class="cell code" id="1AD_Y8CaRU9K">
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>agent.reset_episode_rewards()</span></code></pre></div>
+</div>
+<div class="cell markdown" id="svPTL7AlRU9K">
+<p>We disable the screen-rendering so the game-environment runs much faster.</p>
+</div>
+<div class="cell code" id="XWS7G3yDRU9L">
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>agent.render <span class="op">=</span> <span class="va">False</span></span></code></pre></div>
+</div>
+<div class="cell markdown" id="OQc8AumERU9L">
+<p>We can now run 30 episodes. This records the rewards for each episode. It might have been a good idea to disable the output so it does not print all these lines - you can do this as an exercise.</p>
+</div>
+<div class="cell code" id="T3DjrK-yRU9L" data-outputId="a67803f7-1f88-4f42-cd27-1c88c42256ab">
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>agent.run(num_episodes<span class="op">=</span><span class="dv">30</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>2392:1177839	Q-min: 1.184	Q-max: 1.365	Lives: 5	Reward: 1.0	Episode Mean: 0.0
+2392:1177890	Q-min: 1.239	Q-max: 1.387	Lives: 5	Reward: 2.0	Episode Mean: 0.0
+2392:1177953	Q-min: 1.205	Q-max: 1.420	Lives: 5	Reward: 3.0	Episode Mean: 0.0
+2392:1177999	Q-min: 1.243	Q-max: 1.541	Lives: 5	Reward: 4.0	Episode Mean: 0.0
+2392:1178032	Q-min: 1.236	Q-max: 1.516	Lives: 5	Reward: 5.0	Episode Mean: 0.0
+2392:1178055	Q-min: 0.050	Q-max: 0.106	Lives: 4	Reward: 5.0	Episode Mean: 0.0
+2392:1178106	Q-min: 1.229	Q-max: 1.348	Lives: 4	Reward: 6.0	Episode Mean: 0.0
+2392:1178147	Q-min: 0.103	Q-max: 0.128	Lives: 3	Reward: 6.0	Episode Mean: 0.0
+2392:1178205	Q-min: 1.239	Q-max: 1.342	Lives: 3	Reward: 7.0	Episode Mean: 0.0
+2392:1178269	Q-min: 1.254	Q-max: 1.491	Lives: 3	Reward: 8.0	Episode Mean: 0.0
+2392:1178308	Q-min: 0.082	Q-max: 0.123	Lives: 2	Reward: 8.0	Episode Mean: 0.0
+2392:1178355	Q-min: 1.247	Q-max: 1.398	Lives: 2	Reward: 9.0	Episode Mean: 0.0
+2392:1178382	Q-min: 0.131	Q-max: 0.157	Lives: 1	Reward: 9.0	Episode Mean: 0.0
+2392:1178441	Q-min: 1.198	Q-max: 1.503	Lives: 1	Reward: 10.0	Episode Mean: 0.0
+2392:1178506	Q-min: 1.218	Q-max: 1.342	Lives: 1	Reward: 11.0	Episode Mean: 0.0
+2392:1178573	Q-min: 1.211	Q-max: 1.554	Lives: 1	Reward: 12.0	Episode Mean: 0.0
+2392:1178628	Q-min: 1.272	Q-max: 1.546	Lives: 1	Reward: 13.0	Episode Mean: 0.0
+2392:1178650	Q-min: 0.079	Q-max: 0.122	Lives: 0	Reward: 13.0	Episode Mean: 13.0
+2393:1178697	Q-min: 1.203	Q-max: 1.427	Lives: 5	Reward: 1.0	Episode Mean: 13.0
+2393:1178739	Q-min: 1.233	Q-max: 1.548	Lives: 5	Reward: 2.0	Episode Mean: 13.0
+2393:1178793	Q-min: 1.309	Q-max: 1.414	Lives: 5	Reward: 3.0	Episode Mean: 13.0
+2393:1178835	Q-min: 0.102	Q-max: 0.131	Lives: 4	Reward: 3.0	Episode Mean: 13.0
+2393:1178878	Q-min: 1.257	Q-max: 1.521	Lives: 4	Reward: 4.0	Episode Mean: 13.0
+2393:1178921	Q-min: 1.275	Q-max: 1.446	Lives: 4	Reward: 5.0	Episode Mean: 13.0
+2393:1178966	Q-min: 1.297	Q-max: 1.528	Lives: 4	Reward: 6.0	Episode Mean: 13.0
+2393:1178997	Q-min: 0.083	Q-max: 0.126	Lives: 3	Reward: 6.0	Episode Mean: 13.0
+2393:1179043	Q-min: 1.246	Q-max: 1.419	Lives: 3	Reward: 7.0	Episode Mean: 13.0
+2393:1179098	Q-min: 1.231	Q-max: 1.501	Lives: 3	Reward: 8.0	Episode Mean: 13.0
+2393:1179151	Q-min: 1.264	Q-max: 1.522	Lives: 3	Reward: 9.0	Episode Mean: 13.0
+2393:1179183	Q-min: 0.069	Q-max: 0.107	Lives: 2	Reward: 9.0	Episode Mean: 13.0
+2393:1179239	Q-min: 1.253	Q-max: 1.325	Lives: 2	Reward: 10.0	Episode Mean: 13.0
+2393:1179305	Q-min: 1.280	Q-max: 1.464	Lives: 2	Reward: 14.0	Episode Mean: 13.0
+2393:1179350	Q-min: 0.060	Q-max: 0.100	Lives: 1	Reward: 14.0	Episode Mean: 13.0
+2393:1179390	Q-min: 1.216	Q-max: 1.519	Lives: 1	Reward: 15.0	Episode Mean: 13.0
+2393:1179432	Q-min: 1.231	Q-max: 1.558	Lives: 1	Reward: 16.0	Episode Mean: 13.0
+2393:1179478	Q-min: 1.285	Q-max: 1.511	Lives: 1	Reward: 17.0	Episode Mean: 13.0
+2393:1179517	Q-min: 1.237	Q-max: 1.543	Lives: 1	Reward: 18.0	Episode Mean: 13.0
+2393:1179549	Q-min: 1.248	Q-max: 1.507	Lives: 1	Reward: 19.0	Episode Mean: 13.0
+2393:1179584	Q-min: 1.236	Q-max: 1.507	Lives: 1	Reward: 20.0	Episode Mean: 13.0
+2393:1179606	Q-min: 0.049	Q-max: 0.105	Lives: 0	Reward: 20.0	Episode Mean: 16.5
+2394:1179648	Q-min: 1.256	Q-max: 1.476	Lives: 5	Reward: 1.0	Episode Mean: 16.5
+2394:1179700	Q-min: 1.234	Q-max: 1.445	Lives: 5	Reward: 2.0	Episode Mean: 16.5
+2394:1179738	Q-min: 0.107	Q-max: 0.141	Lives: 4	Reward: 2.0	Episode Mean: 16.5
+2394:1179783	Q-min: 1.214	Q-max: 1.541	Lives: 4	Reward: 3.0	Episode Mean: 16.5
+2394:1179836	Q-min: 1.240	Q-max: 1.416	Lives: 4	Reward: 4.0	Episode Mean: 16.5
+2394:1179889	Q-min: 1.260	Q-max: 1.504	Lives: 4	Reward: 5.0	Episode Mean: 16.5
+2394:1179925	Q-min: 1.334	Q-max: 1.603	Lives: 4	Reward: 6.0	Episode Mean: 16.5
+2394:1179947	Q-min: 0.073	Q-max: 0.119	Lives: 3	Reward: 6.0	Episode Mean: 16.5
+2394:1179992	Q-min: 1.246	Q-max: 1.600	Lives: 3	Reward: 7.0	Episode Mean: 16.5
+2394:1180045	Q-min: 1.220	Q-max: 1.485	Lives: 3	Reward: 8.0	Episode Mean: 16.5
+2394:1180108	Q-min: 1.235	Q-max: 1.397	Lives: 3	Reward: 9.0	Episode Mean: 16.5
+2394:1180153	Q-min: 1.245	Q-max: 1.484	Lives: 3	Reward: 10.0	Episode Mean: 16.5
+2394:1180184	Q-min: 1.274	Q-max: 1.610	Lives: 3	Reward: 11.0	Episode Mean: 16.5
+2394:1180216	Q-min: 1.277	Q-max: 1.399	Lives: 3	Reward: 12.0	Episode Mean: 16.5
+2394:1180248	Q-min: 1.279	Q-max: 1.556	Lives: 3	Reward: 13.0	Episode Mean: 16.5
+2394:1180268	Q-min: 0.142	Q-max: 0.154	Lives: 2	Reward: 13.0	Episode Mean: 16.5
+2394:1180301	Q-min: 0.085	Q-max: 0.113	Lives: 1	Reward: 13.0	Episode Mean: 16.5
+2394:1180355	Q-min: 1.252	Q-max: 1.359	Lives: 1	Reward: 14.0	Episode Mean: 16.5
+2394:1180420	Q-min: 1.216	Q-max: 1.448	Lives: 1	Reward: 15.0	Episode Mean: 16.5
+2394:1180464	Q-min: 0.038	Q-max: 0.105	Lives: 0	Reward: 15.0	Episode Mean: 16.0
+2395:1180508	Q-min: 1.243	Q-max: 1.442	Lives: 5	Reward: 1.0	Episode Mean: 16.0
+2395:1180536	Q-min: 0.075	Q-max: 0.113	Lives: 4	Reward: 1.0	Episode Mean: 16.0
+2395:1180594	Q-min: 1.224	Q-max: 1.365	Lives: 4	Reward: 2.0	Episode Mean: 16.0
+2395:1180635	Q-min: 0.088	Q-max: 0.131	Lives: 3	Reward: 2.0	Episode Mean: 16.0
+2395:1180678	Q-min: 1.234	Q-max: 1.464	Lives: 3	Reward: 3.0	Episode Mean: 16.0
+2395:1180730	Q-min: 1.274	Q-max: 1.366	Lives: 3	Reward: 4.0	Episode Mean: 16.0
+2395:1180792	Q-min: 1.223	Q-max: 1.372	Lives: 3	Reward: 5.0	Episode Mean: 16.0
+2395:1180841	Q-min: 1.232	Q-max: 1.580	Lives: 3	Reward: 6.0	Episode Mean: 16.0
+2395:1180876	Q-min: 1.283	Q-max: 1.449	Lives: 3	Reward: 7.0	Episode Mean: 16.0
+2395:1180911	Q-min: 1.224	Q-max: 1.545	Lives: 3	Reward: 11.0	Episode Mean: 16.0
+2395:1180934	Q-min: 0.094	Q-max: 0.122	Lives: 2	Reward: 11.0	Episode Mean: 16.0
+2395:1180979	Q-min: 1.259	Q-max: 1.421	Lives: 2	Reward: 12.0	Episode Mean: 16.0
+2395:1181005	Q-min: 0.070	Q-max: 0.112	Lives: 1	Reward: 12.0	Episode Mean: 16.0
+2395:1181062	Q-min: 1.235	Q-max: 1.389	Lives: 1	Reward: 13.0	Episode Mean: 16.0
+2395:1181114	Q-min: 1.251	Q-max: 1.598	Lives: 1	Reward: 14.0	Episode Mean: 16.0
+2395:1181173	Q-min: 1.195	Q-max: 1.431	Lives: 1	Reward: 15.0	Episode Mean: 16.0
+2395:1181215	Q-min: 0.102	Q-max: 0.136	Lives: 0	Reward: 15.0	Episode Mean: 15.8
+2396:1181268	Q-min: 1.211	Q-max: 1.397	Lives: 5	Reward: 1.0	Episode Mean: 15.8
+2396:1181331	Q-min: 1.216	Q-max: 1.481	Lives: 5	Reward: 2.0	Episode Mean: 15.8
+2396:1181398	Q-min: 1.215	Q-max: 1.386	Lives: 5	Reward: 3.0	Episode Mean: 15.8
+2396:1181446	Q-min: 1.279	Q-max: 1.453	Lives: 5	Reward: 4.0	Episode Mean: 15.8
+2396:1181464	Q-min: 0.236	Q-max: 0.240	Lives: 4	Reward: 4.0	Episode Mean: 15.8
+2396:1181521	Q-min: 1.202	Q-max: 1.430	Lives: 4	Reward: 5.0	Episode Mean: 15.8
+2396:1181570	Q-min: 1.263	Q-max: 1.558	Lives: 4	Reward: 6.0	Episode Mean: 15.8
+2396:1181620	Q-min: 1.257	Q-max: 1.536	Lives: 4	Reward: 7.0	Episode Mean: 15.8
+2396:1181665	Q-min: 1.262	Q-max: 1.546	Lives: 4	Reward: 8.0	Episode Mean: 15.8
+2396:1181697	Q-min: 1.265	Q-max: 1.603	Lives: 4	Reward: 9.0	Episode Mean: 15.8
+2396:1181733	Q-min: 1.242	Q-max: 1.638	Lives: 4	Reward: 10.0	Episode Mean: 15.8
+2396:1181763	Q-min: 1.220	Q-max: 1.614	Lives: 4	Reward: 11.0	Episode Mean: 15.8
+2396:1181811	Q-min: 1.219	Q-max: 1.439	Lives: 4	Reward: 12.0	Episode Mean: 15.8
+2396:1181852	Q-min: 0.090	Q-max: 0.128	Lives: 3	Reward: 12.0	Episode Mean: 15.8
+2396:1181897	Q-min: 1.292	Q-max: 1.475	Lives: 3	Reward: 13.0	Episode Mean: 15.8
+2396:1181948	Q-min: 1.281	Q-max: 1.448	Lives: 3	Reward: 14.0	Episode Mean: 15.8
+2396:1181992	Q-min: 0.110	Q-max: 0.142	Lives: 2	Reward: 14.0	Episode Mean: 15.8
+2396:1182050	Q-min: 1.275	Q-max: 1.405	Lives: 2	Reward: 15.0	Episode Mean: 15.8
+2396:1182093	Q-min: 0.132	Q-max: 0.143	Lives: 1	Reward: 15.0	Episode Mean: 15.8
+2396:1182154	Q-min: 1.196	Q-max: 1.422	Lives: 1	Reward: 16.0	Episode Mean: 15.8
+2396:1182216	Q-min: 1.259	Q-max: 1.382	Lives: 1	Reward: 17.0	Episode Mean: 15.8
+2396:1182260	Q-min: 0.087	Q-max: 0.123	Lives: 0	Reward: 17.0	Episode Mean: 16.0
+2397:1182303	Q-min: 1.241	Q-max: 1.408	Lives: 5	Reward: 1.0	Episode Mean: 16.0
+2397:1182343	Q-min: 1.216	Q-max: 1.535	Lives: 5	Reward: 2.0	Episode Mean: 16.0
+2397:1182370	Q-min: 0.083	Q-max: 0.125	Lives: 4	Reward: 2.0	Episode Mean: 16.0
+2397:1182423	Q-min: 1.263	Q-max: 1.339	Lives: 4	Reward: 3.0	Episode Mean: 16.0
+2397:1182474	Q-min: 1.246	Q-max: 1.449	Lives: 4	Reward: 4.0	Episode Mean: 16.0
+2397:1182501	Q-min: 0.079	Q-max: 0.118	Lives: 3	Reward: 4.0	Episode Mean: 16.0
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>2397:1182556	Q-min: 1.242	Q-max: 1.360	Lives: 3	Reward: 5.0	Episode Mean: 16.0
+2397:1182598	Q-min: 0.101	Q-max: 0.133	Lives: 2	Reward: 5.0	Episode Mean: 16.0
+2397:1182656	Q-min: 1.242	Q-max: 1.447	Lives: 2	Reward: 6.0	Episode Mean: 16.0
+2397:1182711	Q-min: 1.266	Q-max: 1.499	Lives: 2	Reward: 7.0	Episode Mean: 16.0
+2397:1182763	Q-min: 1.257	Q-max: 1.469	Lives: 2	Reward: 8.0	Episode Mean: 16.0
+2397:1182803	Q-min: 0.084	Q-max: 0.123	Lives: 1	Reward: 8.0	Episode Mean: 16.0
+2397:1182838	Q-min: 0.112	Q-max: 0.129	Lives: 0	Reward: 8.0	Episode Mean: 14.7
+2398:1182879	Q-min: 1.246	Q-max: 1.351	Lives: 5	Reward: 1.0	Episode Mean: 14.7
+2398:1182921	Q-min: 1.223	Q-max: 1.593	Lives: 5	Reward: 2.0	Episode Mean: 14.7
+2398:1182950	Q-min: 0.049	Q-max: 0.102	Lives: 4	Reward: 2.0	Episode Mean: 14.7
+2398:1183003	Q-min: 1.221	Q-max: 1.315	Lives: 4	Reward: 3.0	Episode Mean: 14.7
+2398:1183053	Q-min: 1.278	Q-max: 1.396	Lives: 4	Reward: 4.0	Episode Mean: 14.7
+2398:1183106	Q-min: 1.283	Q-max: 1.461	Lives: 4	Reward: 5.0	Episode Mean: 14.7
+2398:1183151	Q-min: 1.276	Q-max: 1.649	Lives: 4	Reward: 6.0	Episode Mean: 14.7
+2398:1183172	Q-min: 0.064	Q-max: 0.111	Lives: 3	Reward: 6.0	Episode Mean: 14.7
+2398:1183216	Q-min: 1.277	Q-max: 1.555	Lives: 3	Reward: 7.0	Episode Mean: 14.7
+2398:1183244	Q-min: 0.100	Q-max: 0.134	Lives: 2	Reward: 7.0	Episode Mean: 14.7
+2398:1183288	Q-min: 1.237	Q-max: 1.577	Lives: 2	Reward: 8.0	Episode Mean: 14.7
+2398:1183342	Q-min: 1.251	Q-max: 1.539	Lives: 2	Reward: 9.0	Episode Mean: 14.7
+2398:1183408	Q-min: 1.245	Q-max: 1.439	Lives: 2	Reward: 10.0	Episode Mean: 14.7
+2398:1183460	Q-min: 1.216	Q-max: 1.593	Lives: 2	Reward: 11.0	Episode Mean: 14.7
+2398:1183492	Q-min: 1.219	Q-max: 1.558	Lives: 2	Reward: 12.0	Episode Mean: 14.7
+2398:1183512	Q-min: 0.131	Q-max: 0.153	Lives: 1	Reward: 12.0	Episode Mean: 14.7
+2398:1183558	Q-min: 1.210	Q-max: 1.508	Lives: 1	Reward: 13.0	Episode Mean: 14.7
+2398:1183603	Q-min: 1.261	Q-max: 1.509	Lives: 1	Reward: 14.0	Episode Mean: 14.7
+2398:1183645	Q-min: 1.262	Q-max: 1.532	Lives: 1	Reward: 15.0	Episode Mean: 14.7
+2398:1183685	Q-min: 1.190	Q-max: 1.451	Lives: 1	Reward: 19.0	Episode Mean: 14.7
+2398:1183709	Q-min: 0.061	Q-max: 0.101	Lives: 0	Reward: 19.0	Episode Mean: 15.3
+2399:1183756	Q-min: 1.252	Q-max: 1.448	Lives: 5	Reward: 1.0	Episode Mean: 15.3
+2399:1183781	Q-min: 0.067	Q-max: 0.114	Lives: 4	Reward: 1.0	Episode Mean: 15.3
+2399:1183828	Q-min: 1.284	Q-max: 1.506	Lives: 4	Reward: 2.0	Episode Mean: 15.3
+2399:1183882	Q-min: 1.201	Q-max: 1.473	Lives: 4	Reward: 3.0	Episode Mean: 15.3
+2399:1183935	Q-min: 1.218	Q-max: 1.543	Lives: 4	Reward: 4.0	Episode Mean: 15.3
+2399:1183970	Q-min: 1.221	Q-max: 1.440	Lives: 4	Reward: 5.0	Episode Mean: 15.3
+2399:1184002	Q-min: 1.207	Q-max: 1.497	Lives: 4	Reward: 6.0	Episode Mean: 15.3
+2399:1184037	Q-min: 1.212	Q-max: 1.565	Lives: 4	Reward: 7.0	Episode Mean: 15.3
+2399:1184068	Q-min: 1.306	Q-max: 1.428	Lives: 4	Reward: 8.0	Episode Mean: 15.3
+2399:1184113	Q-min: 1.240	Q-max: 1.438	Lives: 4	Reward: 9.0	Episode Mean: 15.3
+2399:1184154	Q-min: 0.059	Q-max: 0.106	Lives: 3	Reward: 9.0	Episode Mean: 15.3
+2399:1184199	Q-min: 1.238	Q-max: 1.585	Lives: 3	Reward: 10.0	Episode Mean: 15.3
+2399:1184228	Q-min: 0.088	Q-max: 0.126	Lives: 2	Reward: 10.0	Episode Mean: 15.3
+2399:1184282	Q-min: 1.235	Q-max: 1.351	Lives: 2	Reward: 11.0	Episode Mean: 15.3
+2399:1184348	Q-min: 1.173	Q-max: 1.452	Lives: 2	Reward: 12.0	Episode Mean: 15.3
+2399:1184403	Q-min: 1.259	Q-max: 1.503	Lives: 2	Reward: 13.0	Episode Mean: 15.3
+2399:1184443	Q-min: 1.237	Q-max: 1.543	Lives: 2	Reward: 14.0	Episode Mean: 15.3
+2399:1184477	Q-min: 1.289	Q-max: 1.449	Lives: 2	Reward: 15.0	Episode Mean: 15.3
+2399:1184508	Q-min: 1.256	Q-max: 1.506	Lives: 2	Reward: 16.0	Episode Mean: 15.3
+2399:1184541	Q-min: 1.318	Q-max: 1.474	Lives: 2	Reward: 17.0	Episode Mean: 15.3
+2399:1184590	Q-min: 1.268	Q-max: 1.501	Lives: 2	Reward: 18.0	Episode Mean: 15.3
+2399:1184656	Q-min: 1.271	Q-max: 1.445	Lives: 2	Reward: 19.0	Episode Mean: 15.3
+2399:1184719	Q-min: 1.220	Q-max: 1.341	Lives: 2	Reward: 20.0	Episode Mean: 15.3
+2399:1184761	Q-min: 0.093	Q-max: 0.130	Lives: 1	Reward: 20.0	Episode Mean: 15.3
+2399:1184804	Q-min: 1.293	Q-max: 1.466	Lives: 1	Reward: 21.0	Episode Mean: 15.3
+2399:1184863	Q-min: 1.270	Q-max: 1.519	Lives: 1	Reward: 22.0	Episode Mean: 15.3
+2399:1184908	Q-min: 0.064	Q-max: 0.101	Lives: 0	Reward: 22.0	Episode Mean: 16.1
+2400:1184952	Q-min: 1.251	Q-max: 1.476	Lives: 5	Reward: 1.0	Episode Mean: 16.1
+2400:1185004	Q-min: 1.235	Q-max: 1.363	Lives: 5	Reward: 2.0	Episode Mean: 16.1
+2400:1185047	Q-min: 0.134	Q-max: 0.157	Lives: 4	Reward: 2.0	Episode Mean: 16.1
+2400:1185079	Q-min: 0.103	Q-max: 0.134	Lives: 3	Reward: 2.0	Episode Mean: 16.1
+2400:1185122	Q-min: 1.234	Q-max: 1.541	Lives: 3	Reward: 3.0	Episode Mean: 16.1
+2400:1185164	Q-min: 1.215	Q-max: 1.538	Lives: 3	Reward: 4.0	Episode Mean: 16.1
+2400:1185206	Q-min: 1.268	Q-max: 1.521	Lives: 3	Reward: 5.0	Episode Mean: 16.1
+2400:1185243	Q-min: 1.296	Q-max: 1.520	Lives: 3	Reward: 6.0	Episode Mean: 16.1
+2400:1185275	Q-min: 1.256	Q-max: 1.488	Lives: 3	Reward: 7.0	Episode Mean: 16.1
+2400:1185307	Q-min: 1.239	Q-max: 1.523	Lives: 3	Reward: 8.0	Episode Mean: 16.1
+2400:1185339	Q-min: 1.270	Q-max: 1.514	Lives: 3	Reward: 9.0	Episode Mean: 16.1
+2400:1185359	Q-min: 0.051	Q-max: 0.103	Lives: 2	Reward: 9.0	Episode Mean: 16.1
+2400:1185414	Q-min: 1.221	Q-max: 1.359	Lives: 2	Reward: 10.0	Episode Mean: 16.1
+2400:1185477	Q-min: 1.265	Q-max: 1.347	Lives: 2	Reward: 11.0	Episode Mean: 16.1
+2400:1185540	Q-min: 1.257	Q-max: 1.394	Lives: 2	Reward: 12.0	Episode Mean: 16.1
+2400:1185590	Q-min: 1.271	Q-max: 1.475	Lives: 2	Reward: 13.0	Episode Mean: 16.1
+2400:1185611	Q-min: 0.114	Q-max: 0.149	Lives: 1	Reward: 13.0	Episode Mean: 16.1
+2400:1185664	Q-min: 1.207	Q-max: 1.364	Lives: 1	Reward: 14.0	Episode Mean: 16.1
+2400:1185726	Q-min: 1.224	Q-max: 1.388	Lives: 1	Reward: 15.0	Episode Mean: 16.1
+2400:1185767	Q-min: 0.051	Q-max: 0.097	Lives: 0	Reward: 15.0	Episode Mean: 16.0
+2401:1185810	Q-min: 1.248	Q-max: 1.404	Lives: 5	Reward: 1.0	Episode Mean: 16.0
+2401:1185852	Q-min: 1.210	Q-max: 1.526	Lives: 5	Reward: 2.0	Episode Mean: 16.0
+2401:1185904	Q-min: 1.260	Q-max: 1.461	Lives: 5	Reward: 3.0	Episode Mean: 16.0
+2401:1185943	Q-min: 0.076	Q-max: 0.117	Lives: 4	Reward: 3.0	Episode Mean: 16.0
+2401:1186000	Q-min: 1.182	Q-max: 1.396	Lives: 4	Reward: 4.0	Episode Mean: 16.0
+2401:1186061	Q-min: 1.254	Q-max: 1.368	Lives: 4	Reward: 5.0	Episode Mean: 16.0
+2401:1186129	Q-min: 1.297	Q-max: 1.440	Lives: 4	Reward: 6.0	Episode Mean: 16.0
+2401:1186176	Q-min: 1.181	Q-max: 1.551	Lives: 4	Reward: 7.0	Episode Mean: 16.0
+2401:1186207	Q-min: 1.260	Q-max: 1.486	Lives: 4	Reward: 8.0	Episode Mean: 16.0
+2401:1186227	Q-min: 0.111	Q-max: 0.140	Lives: 3	Reward: 8.0	Episode Mean: 16.0
+2401:1186271	Q-min: 1.302	Q-max: 1.476	Lives: 3	Reward: 9.0	Episode Mean: 16.0
+2401:1186312	Q-min: 1.194	Q-max: 1.524	Lives: 3	Reward: 10.0	Episode Mean: 16.0
+2401:1186353	Q-min: 1.269	Q-max: 1.516	Lives: 3	Reward: 11.0	Episode Mean: 16.0
+2401:1186389	Q-min: 1.263	Q-max: 1.532	Lives: 3	Reward: 12.0	Episode Mean: 16.0
+2401:1186422	Q-min: 1.207	Q-max: 1.555	Lives: 3	Reward: 13.0	Episode Mean: 16.0
+2401:1186459	Q-min: 0.957	Q-max: 1.438	Lives: 3	Reward: 17.0	Episode Mean: 16.0
+2401:1186480	Q-min: 0.075	Q-max: 0.127	Lives: 2	Reward: 17.0	Episode Mean: 16.0
+2401:1186526	Q-min: 1.250	Q-max: 1.473	Lives: 2	Reward: 18.0	Episode Mean: 16.0
+2401:1186575	Q-min: 1.282	Q-max: 1.470	Lives: 2	Reward: 19.0	Episode Mean: 16.0
+2401:1186639	Q-min: 1.294	Q-max: 1.447	Lives: 2	Reward: 20.0	Episode Mean: 16.0
+2401:1186687	Q-min: 1.198	Q-max: 1.521	Lives: 2	Reward: 21.0	Episode Mean: 16.0
+2401:1186708	Q-min: 0.154	Q-max: 0.162	Lives: 1	Reward: 21.0	Episode Mean: 16.0
+2401:1186755	Q-min: 1.063	Q-max: 1.300	Lives: 1	Reward: 25.0	Episode Mean: 16.0
+2401:1186775	Q-min: 1.240	Q-max: 1.547	Lives: 1	Reward: 26.0	Episode Mean: 16.0
+2401:1186793	Q-min: 1.224	Q-max: 1.590	Lives: 1	Reward: 27.0	Episode Mean: 16.0
+2401:1186813	Q-min: 1.244	Q-max: 1.535	Lives: 1	Reward: 31.0	Episode Mean: 16.0
+2401:1186829	Q-min: 0.159	Q-max: 0.205	Lives: 0	Reward: 31.0	Episode Mean: 17.5
+2402:1186872	Q-min: 1.263	Q-max: 1.443	Lives: 5	Reward: 1.0	Episode Mean: 17.5
+2402:1186901	Q-min: 0.128	Q-max: 0.151	Lives: 4	Reward: 1.0	Episode Mean: 17.5
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>2402:1186944	Q-min: 1.235	Q-max: 1.504	Lives: 4	Reward: 2.0	Episode Mean: 17.5
+2402:1186996	Q-min: 1.205	Q-max: 1.336	Lives: 4	Reward: 3.0	Episode Mean: 17.5
+2402:1187056	Q-min: 1.194	Q-max: 1.407	Lives: 4	Reward: 4.0	Episode Mean: 17.5
+2402:1187102	Q-min: 1.261	Q-max: 1.519	Lives: 4	Reward: 5.0	Episode Mean: 17.5
+2402:1187123	Q-min: 0.070	Q-max: 0.106	Lives: 3	Reward: 5.0	Episode Mean: 17.5
+2402:1187167	Q-min: 1.223	Q-max: 1.614	Lives: 3	Reward: 6.0	Episode Mean: 17.5
+2402:1187224	Q-min: 1.242	Q-max: 1.474	Lives: 3	Reward: 7.0	Episode Mean: 17.5
+2402:1187289	Q-min: 1.250	Q-max: 1.433	Lives: 3	Reward: 8.0	Episode Mean: 17.5
+2402:1187332	Q-min: 0.094	Q-max: 0.128	Lives: 2	Reward: 8.0	Episode Mean: 17.5
+2402:1187375	Q-min: 1.150	Q-max: 1.484	Lives: 2	Reward: 12.0	Episode Mean: 17.5
+2402:1187434	Q-min: 1.273	Q-max: 1.372	Lives: 2	Reward: 13.0	Episode Mean: 17.5
+2402:1187499	Q-min: 1.260	Q-max: 1.461	Lives: 2	Reward: 14.0	Episode Mean: 17.5
+2402:1187547	Q-min: 1.192	Q-max: 1.566	Lives: 2	Reward: 15.0	Episode Mean: 17.5
+2402:1187579	Q-min: 1.320	Q-max: 1.556	Lives: 2	Reward: 16.0	Episode Mean: 17.5
+2402:1187614	Q-min: 1.214	Q-max: 1.656	Lives: 2	Reward: 20.0	Episode Mean: 17.5
+2402:1187647	Q-min: 1.267	Q-max: 1.472	Lives: 2	Reward: 24.0	Episode Mean: 17.5
+2402:1187661	Q-min: 0.524	Q-max: 0.869	Lives: 1	Reward: 24.0	Episode Mean: 17.5
+2402:1187711	Q-min: 1.238	Q-max: 1.335	Lives: 1	Reward: 25.0	Episode Mean: 17.5
+2402:1187771	Q-min: 1.249	Q-max: 1.385	Lives: 1	Reward: 26.0	Episode Mean: 17.5
+2402:1187823	Q-min: 1.298	Q-max: 1.476	Lives: 1	Reward: 27.0	Episode Mean: 17.5
+2402:1187860	Q-min: 1.298	Q-max: 1.571	Lives: 1	Reward: 28.0	Episode Mean: 17.5
+2402:1187881	Q-min: 0.159	Q-max: 0.183	Lives: 0	Reward: 28.0	Episode Mean: 18.5
+2403:1187924	Q-min: 1.251	Q-max: 1.388	Lives: 5	Reward: 1.0	Episode Mean: 18.5
+2403:1187964	Q-min: 1.228	Q-max: 1.512	Lives: 5	Reward: 2.0	Episode Mean: 18.5
+2403:1188012	Q-min: 1.254	Q-max: 1.507	Lives: 5	Reward: 3.0	Episode Mean: 18.5
+2403:1188059	Q-min: 1.289	Q-max: 1.539	Lives: 5	Reward: 4.0	Episode Mean: 18.5
+2403:1188092	Q-min: 1.267	Q-max: 1.483	Lives: 5	Reward: 5.0	Episode Mean: 18.5
+2403:1188120	Q-min: 1.255	Q-max: 1.484	Lives: 5	Reward: 6.0	Episode Mean: 18.5
+2403:1188153	Q-min: 1.261	Q-max: 1.420	Lives: 5	Reward: 7.0	Episode Mean: 18.5
+2403:1188204	Q-min: 1.278	Q-max: 1.377	Lives: 5	Reward: 8.0	Episode Mean: 18.5
+2403:1188247	Q-min: 0.098	Q-max: 0.134	Lives: 4	Reward: 8.0	Episode Mean: 18.5
+2403:1188300	Q-min: 1.242	Q-max: 1.317	Lives: 4	Reward: 9.0	Episode Mean: 18.5
+2403:1188363	Q-min: 1.229	Q-max: 1.466	Lives: 4	Reward: 10.0	Episode Mean: 18.5
+2403:1188417	Q-min: 1.280	Q-max: 1.528	Lives: 4	Reward: 11.0	Episode Mean: 18.5
+2403:1188451	Q-min: 1.322	Q-max: 1.605	Lives: 4	Reward: 12.0	Episode Mean: 18.5
+2403:1188483	Q-min: 1.267	Q-max: 1.472	Lives: 4	Reward: 13.0	Episode Mean: 18.5
+2403:1188514	Q-min: 1.246	Q-max: 1.691	Lives: 4	Reward: 17.0	Episode Mean: 18.5
+2403:1188538	Q-min: 0.108	Q-max: 0.133	Lives: 3	Reward: 17.0	Episode Mean: 18.5
+2403:1188582	Q-min: 1.244	Q-max: 1.586	Lives: 3	Reward: 18.0	Episode Mean: 18.5
+2403:1188636	Q-min: 1.255	Q-max: 1.427	Lives: 3	Reward: 19.0	Episode Mean: 18.5
+2403:1188689	Q-min: 1.264	Q-max: 1.449	Lives: 3	Reward: 20.0	Episode Mean: 18.5
+2403:1188726	Q-min: 1.244	Q-max: 1.492	Lives: 3	Reward: 21.0	Episode Mean: 18.5
+2403:1188745	Q-min: 0.189	Q-max: 0.214	Lives: 2	Reward: 21.0	Episode Mean: 18.5
+2403:1188793	Q-min: 1.282	Q-max: 1.605	Lives: 2	Reward: 22.0	Episode Mean: 18.5
+2403:1188836	Q-min: 1.263	Q-max: 1.537	Lives: 2	Reward: 23.0	Episode Mean: 18.5
+2403:1188889	Q-min: 1.268	Q-max: 1.533	Lives: 2	Reward: 24.0	Episode Mean: 18.5
+2403:1188940	Q-min: 1.244	Q-max: 1.527	Lives: 2	Reward: 25.0	Episode Mean: 18.5
+2403:1188976	Q-min: 1.259	Q-max: 1.581	Lives: 2	Reward: 29.0	Episode Mean: 18.5
+2403:1189000	Q-min: 0.055	Q-max: 0.100	Lives: 1	Reward: 29.0	Episode Mean: 18.5
+2403:1189056	Q-min: 1.264	Q-max: 1.346	Lives: 1	Reward: 30.0	Episode Mean: 18.5
+2403:1189122	Q-min: 1.162	Q-max: 1.454	Lives: 1	Reward: 31.0	Episode Mean: 18.5
+2403:1189180	Q-min: 1.266	Q-max: 1.524	Lives: 1	Reward: 32.0	Episode Mean: 18.5
+2403:1189220	Q-min: 1.201	Q-max: 1.524	Lives: 1	Reward: 33.0	Episode Mean: 18.5
+2403:1189241	Q-min: 0.043	Q-max: 0.098	Lives: 0	Reward: 33.0	Episode Mean: 19.7
+2404:1189285	Q-min: 1.241	Q-max: 1.408	Lives: 5	Reward: 1.0	Episode Mean: 19.7
+2404:1189339	Q-min: 1.252	Q-max: 1.386	Lives: 5	Reward: 2.0	Episode Mean: 19.7
+2404:1189399	Q-min: 1.247	Q-max: 1.417	Lives: 5	Reward: 3.0	Episode Mean: 19.7
+2404:1189445	Q-min: 0.096	Q-max: 0.131	Lives: 4	Reward: 3.0	Episode Mean: 19.7
+2404:1189498	Q-min: 1.243	Q-max: 1.358	Lives: 4	Reward: 4.0	Episode Mean: 19.7
+2404:1189562	Q-min: 1.243	Q-max: 1.428	Lives: 4	Reward: 5.0	Episode Mean: 19.7
+2404:1189612	Q-min: 1.309	Q-max: 1.489	Lives: 4	Reward: 6.0	Episode Mean: 19.7
+2404:1189652	Q-min: 1.249	Q-max: 1.435	Lives: 4	Reward: 7.0	Episode Mean: 19.7
+2404:1189685	Q-min: 1.244	Q-max: 1.569	Lives: 4	Reward: 8.0	Episode Mean: 19.7
+2404:1189717	Q-min: 1.268	Q-max: 1.409	Lives: 4	Reward: 9.0	Episode Mean: 19.7
+2404:1189751	Q-min: 1.275	Q-max: 1.550	Lives: 4	Reward: 10.0	Episode Mean: 19.7
+2404:1189794	Q-min: 1.203	Q-max: 1.450	Lives: 4	Reward: 11.0	Episode Mean: 19.7
+2404:1189834	Q-min: 0.096	Q-max: 0.126	Lives: 3	Reward: 11.0	Episode Mean: 19.7
+2404:1189891	Q-min: 1.218	Q-max: 1.304	Lives: 3	Reward: 12.0	Episode Mean: 19.7
+2404:1189957	Q-min: 1.205	Q-max: 1.436	Lives: 3	Reward: 13.0	Episode Mean: 19.7
+2404:1190008	Q-min: 1.242	Q-max: 1.529	Lives: 3	Reward: 14.0	Episode Mean: 19.7
+2404:1190047	Q-min: 1.296	Q-max: 1.560	Lives: 3	Reward: 15.0	Episode Mean: 19.7
+2404:1190082	Q-min: 1.295	Q-max: 1.465	Lives: 3	Reward: 16.0	Episode Mean: 19.7
+2404:1190103	Q-min: 0.097	Q-max: 0.141	Lives: 2	Reward: 16.0	Episode Mean: 19.7
+2404:1190149	Q-min: 1.076	Q-max: 1.388	Lives: 2	Reward: 17.0	Episode Mean: 19.7
+2404:1190178	Q-min: 0.086	Q-max: 0.133	Lives: 1	Reward: 17.0	Episode Mean: 19.7
+2404:1190224	Q-min: 1.234	Q-max: 1.558	Lives: 1	Reward: 18.0	Episode Mean: 19.7
+2404:1190282	Q-min: 1.253	Q-max: 1.393	Lives: 1	Reward: 19.0	Episode Mean: 19.7
+2404:1190338	Q-min: 1.294	Q-max: 1.477	Lives: 1	Reward: 20.0	Episode Mean: 19.7
+2404:1190366	Q-min: 0.037	Q-max: 0.102	Lives: 0	Reward: 20.0	Episode Mean: 19.7
+2405:1190413	Q-min: 1.260	Q-max: 1.473	Lives: 5	Reward: 1.0	Episode Mean: 19.7
+2405:1190454	Q-min: 1.264	Q-max: 1.509	Lives: 5	Reward: 2.0	Episode Mean: 19.7
+2405:1190506	Q-min: 1.279	Q-max: 1.414	Lives: 5	Reward: 3.0	Episode Mean: 19.7
+2405:1190554	Q-min: 1.290	Q-max: 1.479	Lives: 5	Reward: 4.0	Episode Mean: 19.7
+2405:1190574	Q-min: 0.036	Q-max: 0.103	Lives: 4	Reward: 4.0	Episode Mean: 19.7
+2405:1190617	Q-min: 1.251	Q-max: 1.441	Lives: 4	Reward: 5.0	Episode Mean: 19.7
+2405:1190661	Q-min: 1.250	Q-max: 1.502	Lives: 4	Reward: 6.0	Episode Mean: 19.7
+2405:1190714	Q-min: 1.227	Q-max: 1.342	Lives: 4	Reward: 7.0	Episode Mean: 19.7
+2405:1190760	Q-min: 1.241	Q-max: 1.505	Lives: 4	Reward: 8.0	Episode Mean: 19.7
+2405:1190793	Q-min: 1.274	Q-max: 1.556	Lives: 4	Reward: 9.0	Episode Mean: 19.7
+2405:1190815	Q-min: 0.104	Q-max: 0.140	Lives: 3	Reward: 9.0	Episode Mean: 19.7
+2405:1190873	Q-min: 1.258	Q-max: 1.324	Lives: 3	Reward: 10.0	Episode Mean: 19.7
+2405:1190938	Q-min: 1.295	Q-max: 1.392	Lives: 3	Reward: 11.0	Episode Mean: 19.7
+2405:1191010	Q-min: 1.018	Q-max: 1.427	Lives: 3	Reward: 15.0	Episode Mean: 19.7
+2405:1191053	Q-min: 0.102	Q-max: 0.122	Lives: 2	Reward: 15.0	Episode Mean: 19.7
+2405:1191106	Q-min: 1.216	Q-max: 1.372	Lives: 2	Reward: 16.0	Episode Mean: 19.7
+2405:1191177	Q-min: 1.036	Q-max: 1.113	Lives: 2	Reward: 17.0	Episode Mean: 19.7
+2405:1191245	Q-min: 1.231	Q-max: 1.382	Lives: 2	Reward: 18.0	Episode Mean: 19.7
+2405:1191295	Q-min: 1.268	Q-max: 1.527	Lives: 2	Reward: 19.0	Episode Mean: 19.7
+2405:1191325	Q-min: 1.234	Q-max: 1.527	Lives: 2	Reward: 20.0	Episode Mean: 19.7
+2405:1191357	Q-min: 1.253	Q-max: 1.586	Lives: 2	Reward: 21.0	Episode Mean: 19.7
+2405:1191381	Q-min: 0.038	Q-max: 0.097	Lives: 1	Reward: 21.0	Episode Mean: 19.7
+2405:1191429	Q-min: 1.029	Q-max: 1.394	Lives: 1	Reward: 25.0	Episode Mean: 19.7
+2405:1191475	Q-min: 1.266	Q-max: 1.366	Lives: 1	Reward: 26.0	Episode Mean: 19.7
+2405:1191503	Q-min: 0.081	Q-max: 0.112	Lives: 0	Reward: 26.0	Episode Mean: 20.1
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>2406:1191546	Q-min: 1.255	Q-max: 1.417	Lives: 5	Reward: 1.0	Episode Mean: 20.1
+2406:1191594	Q-min: 1.221	Q-max: 1.351	Lives: 5	Reward: 2.0	Episode Mean: 20.1
+2406:1191643	Q-min: 1.213	Q-max: 1.629	Lives: 5	Reward: 3.0	Episode Mean: 20.1
+2406:1191668	Q-min: 0.109	Q-max: 0.125	Lives: 4	Reward: 3.0	Episode Mean: 20.1
+2406:1191720	Q-min: 1.245	Q-max: 1.328	Lives: 4	Reward: 4.0	Episode Mean: 20.1
+2406:1191783	Q-min: 1.271	Q-max: 1.310	Lives: 4	Reward: 5.0	Episode Mean: 20.1
+2406:1191846	Q-min: 1.247	Q-max: 1.351	Lives: 4	Reward: 6.0	Episode Mean: 20.1
+2406:1191892	Q-min: 1.209	Q-max: 1.500	Lives: 4	Reward: 7.0	Episode Mean: 20.1
+2406:1191911	Q-min: 0.034	Q-max: 0.094	Lives: 3	Reward: 7.0	Episode Mean: 20.1
+2406:1191970	Q-min: 1.208	Q-max: 1.389	Lives: 3	Reward: 8.0	Episode Mean: 20.1
+2406:1192036	Q-min: 1.232	Q-max: 1.392	Lives: 3	Reward: 9.0	Episode Mean: 20.1
+2406:1192088	Q-min: 1.297	Q-max: 1.460	Lives: 3	Reward: 10.0	Episode Mean: 20.1
+2406:1192122	Q-min: 1.253	Q-max: 1.557	Lives: 3	Reward: 11.0	Episode Mean: 20.1
+2406:1192156	Q-min: 1.289	Q-max: 1.533	Lives: 3	Reward: 15.0	Episode Mean: 20.1
+2406:1192179	Q-min: 0.109	Q-max: 0.127	Lives: 2	Reward: 15.0	Episode Mean: 20.1
+2406:1192234	Q-min: 1.185	Q-max: 1.409	Lives: 2	Reward: 16.0	Episode Mean: 20.1
+2406:1192281	Q-min: 0.065	Q-max: 0.104	Lives: 1	Reward: 16.0	Episode Mean: 20.1
+2406:1192341	Q-min: 1.186	Q-max: 1.518	Lives: 1	Reward: 20.0	Episode Mean: 20.1
+2406:1192385	Q-min: 0.073	Q-max: 0.121	Lives: 0	Reward: 20.0	Episode Mean: 20.1
+2407:1192426	Q-min: 1.253	Q-max: 1.484	Lives: 5	Reward: 1.0	Episode Mean: 20.1
+2407:1192467	Q-min: 1.254	Q-max: 1.530	Lives: 5	Reward: 2.0	Episode Mean: 20.1
+2407:1192515	Q-min: 1.265	Q-max: 1.435	Lives: 5	Reward: 3.0	Episode Mean: 20.1
+2407:1192565	Q-min: 1.310	Q-max: 1.632	Lives: 5	Reward: 4.0	Episode Mean: 20.1
+2407:1192585	Q-min: 0.018	Q-max: 0.103	Lives: 4	Reward: 4.0	Episode Mean: 20.1
+2407:1192639	Q-min: 1.238	Q-max: 1.318	Lives: 4	Reward: 5.0	Episode Mean: 20.1
+2407:1192703	Q-min: 1.314	Q-max: 1.333	Lives: 4	Reward: 6.0	Episode Mean: 20.1
+2407:1192746	Q-min: 0.080	Q-max: 0.110	Lives: 3	Reward: 6.0	Episode Mean: 20.1
+2407:1192788	Q-min: 1.222	Q-max: 1.457	Lives: 3	Reward: 7.0	Episode Mean: 20.1
+2407:1192814	Q-min: 0.059	Q-max: 0.109	Lives: 2	Reward: 7.0	Episode Mean: 20.1
+2407:1192862	Q-min: 1.293	Q-max: 1.527	Lives: 2	Reward: 8.0	Episode Mean: 20.1
+2407:1192904	Q-min: 1.242	Q-max: 1.469	Lives: 2	Reward: 9.0	Episode Mean: 20.1
+2407:1192957	Q-min: 1.243	Q-max: 1.477	Lives: 2	Reward: 10.0	Episode Mean: 20.1
+2407:1192999	Q-min: 0.097	Q-max: 0.130	Lives: 1	Reward: 10.0	Episode Mean: 20.1
+2407:1193044	Q-min: 1.246	Q-max: 1.518	Lives: 1	Reward: 11.0	Episode Mean: 20.1
+2407:1193087	Q-min: 1.291	Q-max: 1.537	Lives: 1	Reward: 12.0	Episode Mean: 20.1
+2407:1193138	Q-min: 1.274	Q-max: 1.322	Lives: 1	Reward: 13.0	Episode Mean: 20.1
+2407:1193185	Q-min: 1.229	Q-max: 1.434	Lives: 1	Reward: 14.0	Episode Mean: 20.1
+2407:1193218	Q-min: 1.262	Q-max: 1.493	Lives: 1	Reward: 15.0	Episode Mean: 20.1
+2407:1193249	Q-min: 1.274	Q-max: 1.565	Lives: 1	Reward: 16.0	Episode Mean: 20.1
+2407:1193281	Q-min: 1.281	Q-max: 1.457	Lives: 1	Reward: 17.0	Episode Mean: 20.1
+2407:1193332	Q-min: 1.266	Q-max: 1.492	Lives: 1	Reward: 18.0	Episode Mean: 20.1
+2407:1193376	Q-min: 0.067	Q-max: 0.116	Lives: 0	Reward: 18.0	Episode Mean: 20.0
+2408:1193431	Q-min: 1.240	Q-max: 1.376	Lives: 5	Reward: 1.0	Episode Mean: 20.0
+2408:1193480	Q-min: 1.243	Q-max: 1.465	Lives: 5	Reward: 2.0	Episode Mean: 20.0
+2408:1193522	Q-min: 1.224	Q-max: 1.458	Lives: 5	Reward: 3.0	Episode Mean: 20.0
+2408:1193558	Q-min: 1.319	Q-max: 1.640	Lives: 5	Reward: 4.0	Episode Mean: 20.0
+2408:1193591	Q-min: 1.229	Q-max: 1.469	Lives: 5	Reward: 5.0	Episode Mean: 20.0
+2408:1193622	Q-min: 1.300	Q-max: 1.513	Lives: 5	Reward: 6.0	Episode Mean: 20.0
+2408:1193643	Q-min: 0.079	Q-max: 0.122	Lives: 4	Reward: 6.0	Episode Mean: 20.0
+2408:1193698	Q-min: 1.253	Q-max: 1.480	Lives: 4	Reward: 7.0	Episode Mean: 20.0
+2408:1193763	Q-min: 1.184	Q-max: 1.349	Lives: 4	Reward: 8.0	Episode Mean: 20.0
+2408:1193825	Q-min: 1.256	Q-max: 1.328	Lives: 4	Reward: 9.0	Episode Mean: 20.0
+2408:1193872	Q-min: 1.325	Q-max: 1.534	Lives: 4	Reward: 10.0	Episode Mean: 20.0
+2408:1193904	Q-min: 1.266	Q-max: 1.451	Lives: 4	Reward: 11.0	Episode Mean: 20.0
+2408:1193938	Q-min: 1.245	Q-max: 1.511	Lives: 4	Reward: 12.0	Episode Mean: 20.0
+2408:1193971	Q-min: 1.229	Q-max: 1.489	Lives: 4	Reward: 13.0	Episode Mean: 20.0
+2408:1194020	Q-min: 1.239	Q-max: 1.492	Lives: 4	Reward: 14.0	Episode Mean: 20.0
+2408:1194061	Q-min: 0.056	Q-max: 0.099	Lives: 3	Reward: 14.0	Episode Mean: 20.0
+2408:1194117	Q-min: 1.193	Q-max: 1.449	Lives: 3	Reward: 15.0	Episode Mean: 20.0
+2408:1194186	Q-min: 1.112	Q-max: 1.377	Lives: 3	Reward: 19.0	Episode Mean: 20.0
+2408:1194259	Q-min: 1.033	Q-max: 1.440	Lives: 3	Reward: 23.0	Episode Mean: 20.0
+2408:1194273	Q-min: 0.159	Q-max: 0.206	Lives: 2	Reward: 23.0	Episode Mean: 20.0
+2408:1194327	Q-min: 1.249	Q-max: 1.323	Lives: 2	Reward: 24.0	Episode Mean: 20.0
+2408:1194382	Q-min: 1.245	Q-max: 1.443	Lives: 2	Reward: 25.0	Episode Mean: 20.0
+2408:1194407	Q-min: 0.101	Q-max: 0.135	Lives: 1	Reward: 25.0	Episode Mean: 20.0
+2408:1194461	Q-min: 1.227	Q-max: 1.444	Lives: 1	Reward: 26.0	Episode Mean: 20.0
+2408:1194529	Q-min: 1.219	Q-max: 1.417	Lives: 1	Reward: 27.0	Episode Mean: 20.0
+2408:1194574	Q-min: 0.089	Q-max: 0.116	Lives: 0	Reward: 27.0	Episode Mean: 20.4
+2409:1194630	Q-min: 1.216	Q-max: 1.426	Lives: 5	Reward: 1.0	Episode Mean: 20.4
+2409:1194673	Q-min: 0.081	Q-max: 0.123	Lives: 4	Reward: 1.0	Episode Mean: 20.4
+2409:1194727	Q-min: 1.214	Q-max: 1.409	Lives: 4	Reward: 2.0	Episode Mean: 20.4
+2409:1194767	Q-min: 0.098	Q-max: 0.134	Lives: 3	Reward: 2.0	Episode Mean: 20.4
+2409:1194823	Q-min: 1.266	Q-max: 1.411	Lives: 3	Reward: 3.0	Episode Mean: 20.4
+2409:1194878	Q-min: 1.292	Q-max: 1.494	Lives: 3	Reward: 4.0	Episode Mean: 20.4
+2409:1194919	Q-min: 1.288	Q-max: 1.457	Lives: 3	Reward: 5.0	Episode Mean: 20.4
+2409:1194955	Q-min: 1.329	Q-max: 1.503	Lives: 3	Reward: 6.0	Episode Mean: 20.4
+2409:1194985	Q-min: 1.274	Q-max: 1.487	Lives: 3	Reward: 7.0	Episode Mean: 20.4
+2409:1195018	Q-min: 1.233	Q-max: 1.435	Lives: 3	Reward: 8.0	Episode Mean: 20.4
+2409:1195052	Q-min: 1.246	Q-max: 1.429	Lives: 3	Reward: 9.0	Episode Mean: 20.4
+2409:1195106	Q-min: 1.249	Q-max: 1.370	Lives: 3	Reward: 10.0	Episode Mean: 20.4
+2409:1195148	Q-min: 0.086	Q-max: 0.115	Lives: 2	Reward: 10.0	Episode Mean: 20.4
+2409:1195193	Q-min: 1.226	Q-max: 1.472	Lives: 2	Reward: 11.0	Episode Mean: 20.4
+2409:1195221	Q-min: 0.087	Q-max: 0.127	Lives: 1	Reward: 11.0	Episode Mean: 20.4
+2409:1195264	Q-min: 1.244	Q-max: 1.347	Lives: 1	Reward: 12.0	Episode Mean: 20.4
+2409:1195317	Q-min: 1.241	Q-max: 1.434	Lives: 1	Reward: 13.0	Episode Mean: 20.4
+2409:1195360	Q-min: 0.105	Q-max: 0.136	Lives: 0	Reward: 13.0	Episode Mean: 20.0
+2410:1195404	Q-min: 1.236	Q-max: 1.407	Lives: 5	Reward: 1.0	Episode Mean: 20.0
+2410:1195457	Q-min: 1.244	Q-max: 1.450	Lives: 5	Reward: 2.0	Episode Mean: 20.0
+2410:1195502	Q-min: 0.103	Q-max: 0.139	Lives: 4	Reward: 2.0	Episode Mean: 20.0
+2410:1195557	Q-min: 1.215	Q-max: 1.412	Lives: 4	Reward: 3.0	Episode Mean: 20.0
+2410:1195607	Q-min: 1.234	Q-max: 1.465	Lives: 4	Reward: 4.0	Episode Mean: 20.0
+2410:1195651	Q-min: 1.269	Q-max: 1.479	Lives: 4	Reward: 5.0	Episode Mean: 20.0
+2410:1195688	Q-min: 1.267	Q-max: 1.544	Lives: 4	Reward: 6.0	Episode Mean: 20.0
+2410:1195710	Q-min: 0.129	Q-max: 0.154	Lives: 3	Reward: 6.0	Episode Mean: 20.0
+2410:1195753	Q-min: 1.237	Q-max: 1.478	Lives: 3	Reward: 7.0	Episode Mean: 20.0
+2410:1195803	Q-min: 1.298	Q-max: 1.509	Lives: 3	Reward: 8.0	Episode Mean: 20.0
+2410:1195844	Q-min: 0.102	Q-max: 0.125	Lives: 2	Reward: 8.0	Episode Mean: 20.0
+2410:1195891	Q-min: 1.193	Q-max: 1.486	Lives: 2	Reward: 9.0	Episode Mean: 20.0
+2410:1195937	Q-min: 1.239	Q-max: 1.537	Lives: 2	Reward: 10.0	Episode Mean: 20.0
+2410:1195979	Q-min: 1.264	Q-max: 1.491	Lives: 2	Reward: 11.0	Episode Mean: 20.0
+2410:1196019	Q-min: 1.295	Q-max: 1.469	Lives: 2	Reward: 12.0	Episode Mean: 20.0
+2410:1196049	Q-min: 1.284	Q-max: 1.577	Lives: 2	Reward: 13.0	Episode Mean: 20.0
+2410:1196071	Q-min: 0.071	Q-max: 0.117	Lives: 1	Reward: 13.0	Episode Mean: 20.0
+2410:1196125	Q-min: 1.232	Q-max: 1.368	Lives: 1	Reward: 14.0	Episode Mean: 20.0
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>2410:1196191	Q-min: 1.271	Q-max: 1.507	Lives: 1	Reward: 15.0	Episode Mean: 20.0
+2410:1196245	Q-min: 1.307	Q-max: 1.438	Lives: 1	Reward: 16.0	Episode Mean: 20.0
+2410:1196273	Q-min: 0.032	Q-max: 0.089	Lives: 0	Reward: 16.0	Episode Mean: 19.8
+2411:1196317	Q-min: 1.245	Q-max: 1.454	Lives: 5	Reward: 1.0	Episode Mean: 19.8
+2411:1196369	Q-min: 1.232	Q-max: 1.374	Lives: 5	Reward: 2.0	Episode Mean: 19.8
+2411:1196408	Q-min: 0.145	Q-max: 0.168	Lives: 4	Reward: 2.0	Episode Mean: 19.8
+2411:1196464	Q-min: 1.254	Q-max: 1.314	Lives: 4	Reward: 3.0	Episode Mean: 19.8
+2411:1196514	Q-min: 1.190	Q-max: 1.468	Lives: 4	Reward: 4.0	Episode Mean: 19.8
+2411:1196556	Q-min: 1.284	Q-max: 1.550	Lives: 4	Reward: 5.0	Episode Mean: 19.8
+2411:1196585	Q-min: 0.108	Q-max: 0.136	Lives: 3	Reward: 5.0	Episode Mean: 19.8
+2411:1196639	Q-min: 1.205	Q-max: 1.403	Lives: 3	Reward: 6.0	Episode Mean: 19.8
+2411:1196700	Q-min: 1.224	Q-max: 1.469	Lives: 3	Reward: 7.0	Episode Mean: 19.8
+2411:1196764	Q-min: 1.271	Q-max: 1.385	Lives: 3	Reward: 8.0	Episode Mean: 19.8
+2411:1196805	Q-min: 0.100	Q-max: 0.134	Lives: 2	Reward: 8.0	Episode Mean: 19.8
+2411:1196852	Q-min: 1.264	Q-max: 1.447	Lives: 2	Reward: 9.0	Episode Mean: 19.8
+2411:1196903	Q-min: 1.253	Q-max: 1.481	Lives: 2	Reward: 10.0	Episode Mean: 19.8
+2411:1196955	Q-min: 1.273	Q-max: 1.441	Lives: 2	Reward: 11.0	Episode Mean: 19.8
+2411:1196992	Q-min: 1.248	Q-max: 1.503	Lives: 2	Reward: 12.0	Episode Mean: 19.8
+2411:1197028	Q-min: 1.216	Q-max: 1.527	Lives: 2	Reward: 13.0	Episode Mean: 19.8
+2411:1197049	Q-min: 0.023	Q-max: 0.093	Lives: 1	Reward: 13.0	Episode Mean: 19.8
+2411:1197095	Q-min: 1.258	Q-max: 1.547	Lives: 1	Reward: 14.0	Episode Mean: 19.8
+2411:1197149	Q-min: 1.229	Q-max: 1.329	Lives: 1	Reward: 15.0	Episode Mean: 19.8
+2411:1197217	Q-min: 1.291	Q-max: 1.439	Lives: 1	Reward: 16.0	Episode Mean: 19.8
+2411:1197269	Q-min: 1.278	Q-max: 1.517	Lives: 1	Reward: 20.0	Episode Mean: 19.8
+2411:1197302	Q-min: 1.298	Q-max: 1.503	Lives: 1	Reward: 21.0	Episode Mean: 19.8
+2411:1197324	Q-min: 0.053	Q-max: 0.109	Lives: 0	Reward: 21.0	Episode Mean: 19.9
+2412:1197366	Q-min: 1.262	Q-max: 1.385	Lives: 5	Reward: 1.0	Episode Mean: 19.9
+2412:1197419	Q-min: 1.206	Q-max: 1.388	Lives: 5	Reward: 2.0	Episode Mean: 19.9
+2412:1197471	Q-min: 1.251	Q-max: 1.485	Lives: 5	Reward: 3.0	Episode Mean: 19.9
+2412:1197512	Q-min: 1.267	Q-max: 1.497	Lives: 5	Reward: 4.0	Episode Mean: 19.9
+2412:1197544	Q-min: 1.301	Q-max: 1.463	Lives: 5	Reward: 5.0	Episode Mean: 19.9
+2412:1197580	Q-min: 1.247	Q-max: 1.528	Lives: 5	Reward: 6.0	Episode Mean: 19.9
+2412:1197613	Q-min: 1.312	Q-max: 1.677	Lives: 5	Reward: 7.0	Episode Mean: 19.9
+2412:1197658	Q-min: 1.264	Q-max: 1.436	Lives: 5	Reward: 8.0	Episode Mean: 19.9
+2412:1197726	Q-min: 1.278	Q-max: 1.484	Lives: 5	Reward: 9.0	Episode Mean: 19.9
+2412:1197792	Q-min: 1.245	Q-max: 1.387	Lives: 5	Reward: 10.0	Episode Mean: 19.9
+2412:1197860	Q-min: 1.210	Q-max: 1.525	Lives: 5	Reward: 11.0	Episode Mean: 19.9
+2412:1197904	Q-min: 1.272	Q-max: 1.403	Lives: 5	Reward: 12.0	Episode Mean: 19.9
+2412:1197924	Q-min: 0.043	Q-max: 0.098	Lives: 4	Reward: 12.0	Episode Mean: 19.9
+2412:1197978	Q-min: 1.193	Q-max: 1.358	Lives: 4	Reward: 13.0	Episode Mean: 19.9
+2412:1198044	Q-min: 1.242	Q-max: 1.429	Lives: 4	Reward: 14.0	Episode Mean: 19.9
+2412:1198102	Q-min: 1.279	Q-max: 1.487	Lives: 4	Reward: 15.0	Episode Mean: 19.9
+2412:1198135	Q-min: 1.302	Q-max: 1.495	Lives: 4	Reward: 16.0	Episode Mean: 19.9
+2412:1198156	Q-min: 0.057	Q-max: 0.102	Lives: 3	Reward: 16.0	Episode Mean: 19.9
+2412:1198199	Q-min: 1.283	Q-max: 1.472	Lives: 3	Reward: 17.0	Episode Mean: 19.9
+2412:1198253	Q-min: 1.226	Q-max: 1.547	Lives: 3	Reward: 18.0	Episode Mean: 19.9
+2412:1198317	Q-min: 1.296	Q-max: 1.547	Lives: 3	Reward: 19.0	Episode Mean: 19.9
+2412:1198369	Q-min: 1.259	Q-max: 1.395	Lives: 3	Reward: 20.0	Episode Mean: 19.9
+2412:1198389	Q-min: 0.164	Q-max: 0.192	Lives: 2	Reward: 20.0	Episode Mean: 19.9
+2412:1198433	Q-min: 1.258	Q-max: 1.535	Lives: 2	Reward: 21.0	Episode Mean: 19.9
+2412:1198479	Q-min: 1.223	Q-max: 1.540	Lives: 2	Reward: 25.0	Episode Mean: 19.9
+2412:1198512	Q-min: 0.082	Q-max: 0.117	Lives: 1	Reward: 25.0	Episode Mean: 19.9
+2412:1198560	Q-min: 1.273	Q-max: 1.512	Lives: 1	Reward: 26.0	Episode Mean: 19.9
+2412:1198608	Q-min: 1.235	Q-max: 1.355	Lives: 1	Reward: 27.0	Episode Mean: 19.9
+2412:1198674	Q-min: 1.267	Q-max: 1.486	Lives: 1	Reward: 28.0	Episode Mean: 19.9
+2412:1198727	Q-min: 0.515	Q-max: 0.648	Lives: 1	Reward: 32.0	Episode Mean: 19.9
+2412:1198763	Q-min: 1.265	Q-max: 1.527	Lives: 1	Reward: 36.0	Episode Mean: 19.9
+2412:1198801	Q-min: 1.131	Q-max: 1.593	Lives: 1	Reward: 40.0	Episode Mean: 19.9
+2412:1198817	Q-min: 0.105	Q-max: 0.142	Lives: 0	Reward: 40.0	Episode Mean: 20.8
+2413:1198863	Q-min: 1.258	Q-max: 1.472	Lives: 5	Reward: 1.0	Episode Mean: 20.8
+2413:1198914	Q-min: 1.221	Q-max: 1.476	Lives: 5	Reward: 2.0	Episode Mean: 20.8
+2413:1198957	Q-min: 0.108	Q-max: 0.139	Lives: 4	Reward: 2.0	Episode Mean: 20.8
+2413:1199011	Q-min: 1.240	Q-max: 1.365	Lives: 4	Reward: 3.0	Episode Mean: 20.8
+2413:1199062	Q-min: 1.242	Q-max: 1.508	Lives: 4	Reward: 4.0	Episode Mean: 20.8
+2413:1199089	Q-min: 0.021	Q-max: 0.092	Lives: 3	Reward: 4.0	Episode Mean: 20.8
+2413:1199131	Q-min: 1.301	Q-max: 1.497	Lives: 3	Reward: 5.0	Episode Mean: 20.8
+2413:1199174	Q-min: 1.251	Q-max: 1.497	Lives: 3	Reward: 6.0	Episode Mean: 20.8
+2413:1199227	Q-min: 1.305	Q-max: 1.513	Lives: 3	Reward: 7.0	Episode Mean: 20.8
+2413:1199273	Q-min: 1.203	Q-max: 1.563	Lives: 3	Reward: 8.0	Episode Mean: 20.8
+2413:1199306	Q-min: 1.215	Q-max: 1.508	Lives: 3	Reward: 9.0	Episode Mean: 20.8
+2413:1199342	Q-min: 1.305	Q-max: 1.574	Lives: 3	Reward: 10.0	Episode Mean: 20.8
+2413:1199363	Q-min: 0.113	Q-max: 0.143	Lives: 2	Reward: 10.0	Episode Mean: 20.8
+2413:1199403	Q-min: 1.262	Q-max: 1.450	Lives: 2	Reward: 11.0	Episode Mean: 20.8
+2413:1199446	Q-min: 1.214	Q-max: 1.509	Lives: 2	Reward: 12.0	Episode Mean: 20.8
+2413:1199502	Q-min: 1.320	Q-max: 1.489	Lives: 2	Reward: 13.0	Episode Mean: 20.8
+2413:1199552	Q-min: 1.224	Q-max: 1.480	Lives: 2	Reward: 17.0	Episode Mean: 20.8
+2413:1199585	Q-min: 1.245	Q-max: 1.400	Lives: 2	Reward: 18.0	Episode Mean: 20.8
+2413:1199606	Q-min: 0.065	Q-max: 0.106	Lives: 1	Reward: 18.0	Episode Mean: 20.8
+2413:1199659	Q-min: 1.203	Q-max: 1.348	Lives: 1	Reward: 19.0	Episode Mean: 20.8
+2413:1199723	Q-min: 1.298	Q-max: 1.356	Lives: 1	Reward: 20.0	Episode Mean: 20.8
+2413:1199788	Q-min: 1.246	Q-max: 1.510	Lives: 1	Reward: 21.0	Episode Mean: 20.8
+2413:1199839	Q-min: 1.234	Q-max: 1.533	Lives: 1	Reward: 22.0	Episode Mean: 20.8
+2413:1199872	Q-min: 1.224	Q-max: 1.454	Lives: 1	Reward: 23.0	Episode Mean: 20.8
+2413:1199901	Q-min: 1.311	Q-max: 1.505	Lives: 1	Reward: 24.0	Episode Mean: 20.8
+2413:1199937	Q-min: 1.275	Q-max: 1.530	Lives: 1	Reward: 25.0	Episode Mean: 20.8
+2413:1199982	Q-min: 1.277	Q-max: 1.504	Lives: 1	Reward: 26.0	Episode Mean: 20.8
+2413:1200046	Q-min: 1.304	Q-max: 1.512	Lives: 1	Reward: 27.0	Episode Mean: 20.8
+2413:1200091	Q-min: 0.101	Q-max: 0.130	Lives: 0	Reward: 27.0	Episode Mean: 21.1
+2414:1200134	Q-min: 1.229	Q-max: 1.480	Lives: 5	Reward: 1.0	Episode Mean: 21.1
+2414:1200161	Q-min: 0.117	Q-max: 0.145	Lives: 4	Reward: 1.0	Episode Mean: 21.1
+2414:1200206	Q-min: 1.249	Q-max: 1.549	Lives: 4	Reward: 2.0	Episode Mean: 21.1
+2414:1200233	Q-min: 0.085	Q-max: 0.131	Lives: 3	Reward: 2.0	Episode Mean: 21.1
+2414:1200278	Q-min: 1.198	Q-max: 1.438	Lives: 3	Reward: 3.0	Episode Mean: 21.1
+2414:1200308	Q-min: 0.055	Q-max: 0.104	Lives: 2	Reward: 3.0	Episode Mean: 21.1
+2414:1200364	Q-min: 1.229	Q-max: 1.338	Lives: 2	Reward: 4.0	Episode Mean: 21.1
+2414:1200427	Q-min: 1.218	Q-max: 1.375	Lives: 2	Reward: 5.0	Episode Mean: 21.1
+2414:1200497	Q-min: 1.253	Q-max: 1.362	Lives: 2	Reward: 6.0	Episode Mean: 21.1
+2414:1200542	Q-min: 1.173	Q-max: 1.653	Lives: 2	Reward: 7.0	Episode Mean: 21.1
+2414:1200563	Q-min: 0.019	Q-max: 0.095	Lives: 1	Reward: 7.0	Episode Mean: 21.1
+2414:1200608	Q-min: 1.254	Q-max: 1.446	Lives: 1	Reward: 8.0	Episode Mean: 21.1
+2414:1200637	Q-min: 0.049	Q-max: 0.106	Lives: 0	Reward: 8.0	Episode Mean: 20.5
+2415:1200679	Q-min: 1.260	Q-max: 1.373	Lives: 5	Reward: 1.0	Episode Mean: 20.5
+2415:1200704	Q-min: 0.125	Q-max: 0.144	Lives: 4	Reward: 1.0	Episode Mean: 20.5
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>2415:1200760	Q-min: 1.242	Q-max: 1.342	Lives: 4	Reward: 2.0	Episode Mean: 20.5
+2415:1200812	Q-min: 1.206	Q-max: 1.542	Lives: 4	Reward: 3.0	Episode Mean: 20.5
+2415:1200839	Q-min: 0.098	Q-max: 0.135	Lives: 3	Reward: 3.0	Episode Mean: 20.5
+2415:1200892	Q-min: 1.232	Q-max: 1.352	Lives: 3	Reward: 4.0	Episode Mean: 20.5
+2415:1200958	Q-min: 1.225	Q-max: 1.471	Lives: 3	Reward: 5.0	Episode Mean: 20.5
+2415:1201015	Q-min: 1.309	Q-max: 1.508	Lives: 3	Reward: 6.0	Episode Mean: 20.5
+2415:1201042	Q-min: 0.072	Q-max: 0.120	Lives: 2	Reward: 6.0	Episode Mean: 20.5
+2415:1201086	Q-min: 1.277	Q-max: 1.517	Lives: 2	Reward: 7.0	Episode Mean: 20.5
+2415:1201141	Q-min: 1.229	Q-max: 1.447	Lives: 2	Reward: 8.0	Episode Mean: 20.5
+2415:1201194	Q-min: 1.259	Q-max: 1.575	Lives: 2	Reward: 12.0	Episode Mean: 20.5
+2415:1201235	Q-min: 1.259	Q-max: 1.525	Lives: 2	Reward: 13.0	Episode Mean: 20.5
+2415:1201258	Q-min: 0.061	Q-max: 0.113	Lives: 1	Reward: 13.0	Episode Mean: 20.5
+2415:1201310	Q-min: 1.261	Q-max: 1.372	Lives: 1	Reward: 14.0	Episode Mean: 20.5
+2415:1201369	Q-min: 1.232	Q-max: 1.472	Lives: 1	Reward: 15.0	Episode Mean: 20.5
+2415:1201419	Q-min: 1.263	Q-max: 1.468	Lives: 1	Reward: 16.0	Episode Mean: 20.5
+2415:1201463	Q-min: 0.101	Q-max: 0.122	Lives: 0	Reward: 16.0	Episode Mean: 20.3
+2416:1201508	Q-min: 1.226	Q-max: 1.439	Lives: 5	Reward: 1.0	Episode Mean: 20.3
+2416:1201565	Q-min: 1.233	Q-max: 1.393	Lives: 5	Reward: 2.0	Episode Mean: 20.3
+2416:1201608	Q-min: 0.116	Q-max: 0.144	Lives: 4	Reward: 2.0	Episode Mean: 20.3
+2416:1201664	Q-min: 1.198	Q-max: 1.448	Lives: 4	Reward: 3.0	Episode Mean: 20.3
+2416:1201727	Q-min: 1.254	Q-max: 1.440	Lives: 4	Reward: 4.0	Episode Mean: 20.3
+2416:1201771	Q-min: 0.088	Q-max: 0.128	Lives: 3	Reward: 4.0	Episode Mean: 20.3
+2416:1201803	Q-min: 0.119	Q-max: 0.135	Lives: 2	Reward: 4.0	Episode Mean: 20.3
+2416:1201857	Q-min: 1.236	Q-max: 1.334	Lives: 2	Reward: 5.0	Episode Mean: 20.3
+2416:1201899	Q-min: 0.089	Q-max: 0.126	Lives: 1	Reward: 5.0	Episode Mean: 20.3
+2416:1201953	Q-min: 1.228	Q-max: 1.334	Lives: 1	Reward: 6.0	Episode Mean: 20.3
+2416:1202016	Q-min: 1.273	Q-max: 1.509	Lives: 1	Reward: 7.0	Episode Mean: 20.3
+2416:1202069	Q-min: 1.240	Q-max: 1.469	Lives: 1	Reward: 8.0	Episode Mean: 20.3
+2416:1202105	Q-min: 1.296	Q-max: 1.674	Lives: 1	Reward: 9.0	Episode Mean: 20.3
+2416:1202138	Q-min: 1.194	Q-max: 1.506	Lives: 1	Reward: 13.0	Episode Mean: 20.3
+2416:1202161	Q-min: 0.081	Q-max: 0.119	Lives: 0	Reward: 13.0	Episode Mean: 20.0
+2417:1202206	Q-min: 1.214	Q-max: 1.396	Lives: 5	Reward: 1.0	Episode Mean: 20.0
+2417:1202233	Q-min: 0.057	Q-max: 0.112	Lives: 4	Reward: 1.0	Episode Mean: 20.0
+2417:1202277	Q-min: 1.269	Q-max: 1.533	Lives: 4	Reward: 2.0	Episode Mean: 20.0
+2417:1202306	Q-min: 0.072	Q-max: 0.115	Lives: 3	Reward: 2.0	Episode Mean: 20.0
+2417:1202350	Q-min: 1.227	Q-max: 1.585	Lives: 3	Reward: 3.0	Episode Mean: 20.0
+2417:1202406	Q-min: 1.288	Q-max: 1.457	Lives: 3	Reward: 4.0	Episode Mean: 20.0
+2417:1202468	Q-min: 1.253	Q-max: 1.385	Lives: 3	Reward: 5.0	Episode Mean: 20.0
+2417:1202517	Q-min: 1.319	Q-max: 1.524	Lives: 3	Reward: 6.0	Episode Mean: 20.0
+2417:1202550	Q-min: 1.255	Q-max: 1.540	Lives: 3	Reward: 7.0	Episode Mean: 20.0
+2417:1202581	Q-min: 1.207	Q-max: 1.530	Lives: 3	Reward: 8.0	Episode Mean: 20.0
+2417:1202613	Q-min: 1.282	Q-max: 1.589	Lives: 3	Reward: 9.0	Episode Mean: 20.0
+2417:1202660	Q-min: 1.231	Q-max: 1.373	Lives: 3	Reward: 10.0	Episode Mean: 20.0
+2417:1202702	Q-min: 0.106	Q-max: 0.128	Lives: 2	Reward: 10.0	Episode Mean: 20.0
+2417:1202749	Q-min: 1.240	Q-max: 1.517	Lives: 2	Reward: 11.0	Episode Mean: 20.0
+2417:1202806	Q-min: 1.243	Q-max: 1.412	Lives: 2	Reward: 12.0	Episode Mean: 20.0
+2417:1202873	Q-min: 1.192	Q-max: 1.475	Lives: 2	Reward: 13.0	Episode Mean: 20.0
+2417:1202916	Q-min: 0.107	Q-max: 0.135	Lives: 1	Reward: 13.0	Episode Mean: 20.0
+2417:1202973	Q-min: 1.179	Q-max: 1.458	Lives: 1	Reward: 14.0	Episode Mean: 20.0
+2417:1203037	Q-min: 1.230	Q-max: 1.436	Lives: 1	Reward: 15.0	Episode Mean: 20.0
+2417:1203108	Q-min: 1.138	Q-max: 1.512	Lives: 1	Reward: 16.0	Episode Mean: 20.0
+2417:1203151	Q-min: 0.098	Q-max: 0.119	Lives: 0	Reward: 16.0	Episode Mean: 19.9
+2418:1203192	Q-min: 1.241	Q-max: 1.486	Lives: 5	Reward: 1.0	Episode Mean: 19.9
+2418:1203237	Q-min: 1.238	Q-max: 1.490	Lives: 5	Reward: 2.0	Episode Mean: 19.9
+2418:1203280	Q-min: 1.254	Q-max: 1.523	Lives: 5	Reward: 3.0	Episode Mean: 19.9
+2418:1203315	Q-min: 1.270	Q-max: 1.542	Lives: 5	Reward: 4.0	Episode Mean: 19.9
+2418:1203336	Q-min: 0.185	Q-max: 0.211	Lives: 4	Reward: 4.0	Episode Mean: 19.9
+2418:1203391	Q-min: 1.239	Q-max: 1.317	Lives: 4	Reward: 5.0	Episode Mean: 19.9
+2418:1203454	Q-min: 1.245	Q-max: 1.396	Lives: 4	Reward: 6.0	Episode Mean: 19.9
+2418:1203506	Q-min: 1.200	Q-max: 1.544	Lives: 4	Reward: 7.0	Episode Mean: 19.9
+2418:1203542	Q-min: 1.266	Q-max: 1.521	Lives: 4	Reward: 8.0	Episode Mean: 19.9
+2418:1203574	Q-min: 1.254	Q-max: 1.423	Lives: 4	Reward: 9.0	Episode Mean: 19.9
+2418:1203595	Q-min: 0.044	Q-max: 0.101	Lives: 3	Reward: 9.0	Episode Mean: 19.9
+2418:1203642	Q-min: 1.226	Q-max: 1.492	Lives: 3	Reward: 10.0	Episode Mean: 19.9
+2418:1203694	Q-min: 1.216	Q-max: 1.455	Lives: 3	Reward: 11.0	Episode Mean: 19.9
+2418:1203758	Q-min: 1.244	Q-max: 1.420	Lives: 3	Reward: 12.0	Episode Mean: 19.9
+2418:1203804	Q-min: 1.262	Q-max: 1.491	Lives: 3	Reward: 13.0	Episode Mean: 19.9
+2418:1203838	Q-min: 1.243	Q-max: 1.547	Lives: 3	Reward: 17.0	Episode Mean: 19.9
+2418:1203870	Q-min: 1.232	Q-max: 1.505	Lives: 3	Reward: 18.0	Episode Mean: 19.9
+2418:1203905	Q-min: 1.256	Q-max: 1.547	Lives: 3	Reward: 22.0	Episode Mean: 19.9
+2418:1203956	Q-min: 1.249	Q-max: 1.360	Lives: 3	Reward: 23.0	Episode Mean: 19.9
+2418:1204020	Q-min: 1.286	Q-max: 1.434	Lives: 3	Reward: 24.0	Episode Mean: 19.9
+2418:1204089	Q-min: 1.012	Q-max: 1.337	Lives: 3	Reward: 28.0	Episode Mean: 19.9
+2418:1204158	Q-min: 1.232	Q-max: 1.487	Lives: 3	Reward: 29.0	Episode Mean: 19.9
+2418:1204203	Q-min: 0.071	Q-max: 0.110	Lives: 2	Reward: 29.0	Episode Mean: 19.9
+2418:1204245	Q-min: 1.223	Q-max: 1.565	Lives: 2	Reward: 30.0	Episode Mean: 19.9
+2418:1204287	Q-min: 1.197	Q-max: 1.572	Lives: 2	Reward: 31.0	Episode Mean: 19.9
+2418:1204344	Q-min: 1.209	Q-max: 1.404	Lives: 2	Reward: 32.0	Episode Mean: 19.9
+2418:1204387	Q-min: 0.107	Q-max: 0.137	Lives: 1	Reward: 32.0	Episode Mean: 19.9
+2418:1204441	Q-min: 1.249	Q-max: 1.339	Lives: 1	Reward: 33.0	Episode Mean: 19.9
+2418:1204506	Q-min: 1.267	Q-max: 1.347	Lives: 1	Reward: 34.0	Episode Mean: 19.9
+2418:1204576	Q-min: 1.068	Q-max: 1.384	Lives: 1	Reward: 38.0	Episode Mean: 19.9
+2418:1204628	Q-min: 1.240	Q-max: 1.613	Lives: 1	Reward: 39.0	Episode Mean: 19.9
+2418:1204661	Q-min: 1.260	Q-max: 1.551	Lives: 1	Reward: 40.0	Episode Mean: 19.9
+2418:1204682	Q-min: 0.011	Q-max: 0.089	Lives: 0	Reward: 40.0	Episode Mean: 20.6
+2419:1204735	Q-min: 1.220	Q-max: 1.389	Lives: 5	Reward: 1.0	Episode Mean: 20.6
+2419:1204777	Q-min: 0.086	Q-max: 0.122	Lives: 4	Reward: 1.0	Episode Mean: 20.6
+2419:1204832	Q-min: 1.245	Q-max: 1.367	Lives: 4	Reward: 2.0	Episode Mean: 20.6
+2419:1204893	Q-min: 1.230	Q-max: 1.409	Lives: 4	Reward: 3.0	Episode Mean: 20.6
+2419:1204949	Q-min: 1.239	Q-max: 1.381	Lives: 4	Reward: 4.0	Episode Mean: 20.6
+2419:1204982	Q-min: 1.258	Q-max: 1.478	Lives: 4	Reward: 5.0	Episode Mean: 20.6
+2419:1205014	Q-min: 1.278	Q-max: 1.550	Lives: 4	Reward: 6.0	Episode Mean: 20.6
+2419:1205047	Q-min: 1.207	Q-max: 1.475	Lives: 4	Reward: 7.0	Episode Mean: 20.6
+2419:1205067	Q-min: 0.093	Q-max: 0.138	Lives: 3	Reward: 7.0	Episode Mean: 20.6
+2419:1205108	Q-min: 1.248	Q-max: 1.406	Lives: 3	Reward: 8.0	Episode Mean: 20.6
+2419:1205161	Q-min: 1.235	Q-max: 1.389	Lives: 3	Reward: 9.0	Episode Mean: 20.6
+2419:1205202	Q-min: 0.086	Q-max: 0.129	Lives: 2	Reward: 9.0	Episode Mean: 20.6
+2419:1205249	Q-min: 0.806	Q-max: 1.165	Lives: 2	Reward: 13.0	Episode Mean: 20.6
+2419:1205298	Q-min: 0.887	Q-max: 1.359	Lives: 2	Reward: 17.0	Episode Mean: 20.6
+2419:1205312	Q-min: 0.120	Q-max: 0.178	Lives: 1	Reward: 17.0	Episode Mean: 20.6
+2419:1205345	Q-min: 0.082	Q-max: 0.122	Lives: 0	Reward: 17.0	Episode Mean: 20.5
+2420:1205389	Q-min: 1.237	Q-max: 1.476	Lives: 5	Reward: 1.0	Episode Mean: 20.5
+2420:1205418	Q-min: 0.073	Q-max: 0.118	Lives: 4	Reward: 1.0	Episode Mean: 20.5
+2420:1205469	Q-min: 1.249	Q-max: 1.324	Lives: 4	Reward: 2.0	Episode Mean: 20.5
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>2420:1205522	Q-min: 1.275	Q-max: 1.439	Lives: 4	Reward: 3.0	Episode Mean: 20.5
+2420:1205575	Q-min: 1.333	Q-max: 1.425	Lives: 4	Reward: 4.0	Episode Mean: 20.5
+2420:1205617	Q-min: 0.101	Q-max: 0.136	Lives: 3	Reward: 4.0	Episode Mean: 20.5
+2420:1205672	Q-min: 1.256	Q-max: 1.338	Lives: 3	Reward: 5.0	Episode Mean: 20.5
+2420:1205732	Q-min: 1.245	Q-max: 1.397	Lives: 3	Reward: 6.0	Episode Mean: 20.5
+2420:1205784	Q-min: 1.299	Q-max: 1.454	Lives: 3	Reward: 7.0	Episode Mean: 20.5
+2420:1205820	Q-min: 1.227	Q-max: 1.574	Lives: 3	Reward: 8.0	Episode Mean: 20.5
+2420:1205852	Q-min: 1.246	Q-max: 1.460	Lives: 3	Reward: 9.0	Episode Mean: 20.5
+2420:1205887	Q-min: 1.365	Q-max: 1.435	Lives: 3	Reward: 10.0	Episode Mean: 20.5
+2420:1205909	Q-min: 0.131	Q-max: 0.145	Lives: 2	Reward: 10.0	Episode Mean: 20.5
+2420:1205954	Q-min: 1.252	Q-max: 1.531	Lives: 2	Reward: 11.0	Episode Mean: 20.5
+2420:1205985	Q-min: 0.097	Q-max: 0.133	Lives: 1	Reward: 11.0	Episode Mean: 20.5
+2420:1206029	Q-min: 1.203	Q-max: 1.463	Lives: 1	Reward: 15.0	Episode Mean: 20.5
+2420:1206076	Q-min: 0.830	Q-max: 1.096	Lives: 1	Reward: 19.0	Episode Mean: 20.5
+2420:1206098	Q-min: 1.233	Q-max: 1.522	Lives: 1	Reward: 20.0	Episode Mean: 20.5
+2420:1206112	Q-min: 0.140	Q-max: 0.153	Lives: 0	Reward: 20.0	Episode Mean: 20.5
+2421:1206156	Q-min: 1.244	Q-max: 1.475	Lives: 5	Reward: 1.0	Episode Mean: 20.5
+2421:1206183	Q-min: 0.072	Q-max: 0.114	Lives: 4	Reward: 1.0	Episode Mean: 20.5
+2421:1206238	Q-min: 1.167	Q-max: 1.451	Lives: 4	Reward: 2.0	Episode Mean: 20.5
+2421:1206303	Q-min: 1.246	Q-max: 1.382	Lives: 4	Reward: 3.0	Episode Mean: 20.5
+2421:1206357	Q-min: 1.233	Q-max: 1.420	Lives: 4	Reward: 4.0	Episode Mean: 20.5
+2421:1206395	Q-min: 1.247	Q-max: 1.588	Lives: 4	Reward: 5.0	Episode Mean: 20.5
+2421:1206425	Q-min: 1.263	Q-max: 1.477	Lives: 4	Reward: 6.0	Episode Mean: 20.5
+2421:1206459	Q-min: 1.332	Q-max: 1.578	Lives: 4	Reward: 7.0	Episode Mean: 20.5
+2421:1206492	Q-min: 1.199	Q-max: 1.486	Lives: 4	Reward: 11.0	Episode Mean: 20.5
+2421:1206541	Q-min: 1.196	Q-max: 1.424	Lives: 4	Reward: 12.0	Episode Mean: 20.5
+2421:1206583	Q-min: 0.097	Q-max: 0.121	Lives: 3	Reward: 12.0	Episode Mean: 20.5
+2421:1206625	Q-min: 1.214	Q-max: 1.495	Lives: 3	Reward: 13.0	Episode Mean: 20.5
+2421:1206670	Q-min: 1.292	Q-max: 1.393	Lives: 3	Reward: 14.0	Episode Mean: 20.5
+2421:1206730	Q-min: 1.136	Q-max: 1.544	Lives: 3	Reward: 18.0	Episode Mean: 20.5
+2421:1206783	Q-min: 1.237	Q-max: 1.514	Lives: 3	Reward: 19.0	Episode Mean: 20.5
+2421:1206817	Q-min: 1.265	Q-max: 1.514	Lives: 3	Reward: 20.0	Episode Mean: 20.5
+2421:1206853	Q-min: 1.172	Q-max: 1.514	Lives: 3	Reward: 24.0	Episode Mean: 20.5
+2421:1206875	Q-min: 0.094	Q-max: 0.119	Lives: 2	Reward: 24.0	Episode Mean: 20.5
+2421:1206925	Q-min: 0.921	Q-max: 1.427	Lives: 2	Reward: 28.0	Episode Mean: 20.5
+2421:1206940	Q-min: 0.208	Q-max: 0.244	Lives: 1	Reward: 28.0	Episode Mean: 20.5
+2421:1206992	Q-min: 0.711	Q-max: 1.110	Lives: 1	Reward: 32.0	Episode Mean: 20.5
+2421:1207005	Q-min: 0.121	Q-max: 0.141	Lives: 0	Reward: 32.0	Episode Mean: 20.9
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="EOXnok-3RU9L">
+<p>We can now print some statistics for the episode rewards, which vary greatly from one episode to the next.</p>
+</div>
+<div class="cell code" id="oKUjL7bORU9L" data-outputId="ac5060bc-5933-43ac-ba69-339802428ccb">
+<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>rewards <span class="op">=</span> agent.episode_rewards</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Rewards for </span><span class="sc">{0}</span><span class="st"> episodes:&quot;</span>.<span class="bu">format</span>(<span class="bu">len</span>(rewards)))</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;- Min:   &quot;</span>, np.<span class="bu">min</span>(rewards))</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;- Mean:  &quot;</span>, np.mean(rewards))</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;- Max:   &quot;</span>, np.<span class="bu">max</span>(rewards))</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;- Stdev: &quot;</span>, np.std(rewards))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Rewards for 30 episodes:
+- Min:    8.0
+- Mean:   20.866666666666667
+- Max:    40.0
+- Stdev:  8.155706931686273
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="bQFESeOFRU9M">
+<p>We can also plot a histogram with the episode rewards.</p>
+</div>
+<div class="cell code" id="SmyL8_w0RU9M" data-outputId="c78490ee-1131-45a3-8f3c-2707018987b8">
+<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>_ <span class="op">=</span> plt.hist(rewards, bins<span class="op">=</span><span class="dv">30</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/ffd991ba10803650ed35519a1e5e6e8464747b4f.png" /></p>
+</div>
+</div>
+<section id="example-states" class="cell markdown" id="OqFLIPI2RU9M">
+<h2>Example States</h2>
+<ul>
+<li><p>We can plot examples of states from the game-environment and the Q-values that are estimated by the Neural Network.</p></li>
+<li><p>This helper-function prints the Q-values for a given index in the replay-memory.</p></li>
+</ul>
+</section>
+<div class="cell code" id="VN-1OoKSRU9M">
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> print_q_values(idx):</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Print Q-values and actions from the replay-memory at the given index.&quot;&quot;&quot;</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the Q-values and action from the replay-memory.</span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>    q_values <span class="op">=</span> replay_memory.q_values[idx]</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>    action <span class="op">=</span> replay_memory.actions[idx]</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Action:     Q-Value:&quot;</span>)</span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;====================&quot;</span>)</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print all the actions and their Q-values.</span></span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, q_value <span class="kw">in</span> <span class="bu">enumerate</span>(q_values):</span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Used to display which action was taken.</span></span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> i <span class="op">==</span> action:</span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a>            action_taken <span class="op">=</span> <span class="st">&quot;(Action Taken)&quot;</span></span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>            action_taken <span class="op">=</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Text-name of the action.</span></span>
+<span id="cb44-20"><a href="#cb44-20" aria-hidden="true" tabindex="-1"></a>        action_name <span class="op">=</span> agent.get_action_name(i)</span>
+<span id="cb44-21"><a href="#cb44-21" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb44-22"><a href="#cb44-22" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;</span><span class="sc">{0:12}{1:.3f}</span><span class="st"> </span><span class="sc">{2}</span><span class="st">&quot;</span>.<span class="bu">format</span>(action_name, q_value,</span>
+<span id="cb44-23"><a href="#cb44-23" aria-hidden="true" tabindex="-1"></a>                                        action_taken))</span>
+<span id="cb44-24"><a href="#cb44-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-25"><a href="#cb44-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Newline.</span></span>
+<span id="cb44-26"><a href="#cb44-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span></code></pre></div>
+</div>
+<div class="cell markdown" id="sI7W-ocNRU9M">
+<ul>
+<li>This helper-function plots a state from the replay-memory and optionally prints the Q-values.</li>
+</ul>
+</div>
+<div class="cell code" id="Ez3XHlIzRU9M">
+<div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_state(idx, print_q<span class="op">=</span><span class="va">True</span>):</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;Plot the state in the replay-memory with the given index.&quot;&quot;&quot;</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the state from the replay-memory.</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>    state <span class="op">=</span> replay_memory.states[idx]</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create figure with a grid of sub-plots.</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>    fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>)</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot the image from the game-environment.</span></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> axes.flat[<span class="dv">0</span>]</span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a>    ax.imshow(state[:, :, <span class="dv">0</span>], vmin<span class="op">=</span><span class="dv">0</span>, vmax<span class="op">=</span><span class="dv">255</span>,</span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a>              interpolation<span class="op">=</span><span class="st">&#39;lanczos&#39;</span>, cmap<span class="op">=</span><span class="st">&#39;gray&#39;</span>)</span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot the motion-trace.</span></span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a>    ax <span class="op">=</span> axes.flat[<span class="dv">1</span>]</span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a>    ax.imshow(state[:, :, <span class="dv">1</span>], vmin<span class="op">=</span><span class="dv">0</span>, vmax<span class="op">=</span><span class="dv">255</span>,</span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a>              interpolation<span class="op">=</span><span class="st">&#39;lanczos&#39;</span>, cmap<span class="op">=</span><span class="st">&#39;gray&#39;</span>)</span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This is necessary if we show more than one plot in a single Notebook cell.</span></span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print the Q-values.</span></span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> print_q:</span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a>        print_q_values(idx<span class="op">=</span>idx)</span></code></pre></div>
+</div>
+<div class="cell markdown" id="0ug6GL_pRU9N">
+<ul>
+<li>The replay-memory has room for 200k states but it is only partially full from the above call to <code>agent.run(num_episodes=1)</code>. This is how many states are actually used.</li>
+</ul>
+</div>
+<div class="cell code" id="uqK9uUa8RU9N" data-outputId="b4b3c55b-d078-412c-c8f5-656833b3567e">
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>num_used <span class="op">=</span> replay_memory.num_used</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>num_used</span></code></pre></div>
+<div class="output execute_result" data-execution_count="29">
+<pre><code>1061</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="grKO_of-RU9N">
+<ul>
+<li>Get the Q-values from the replay-memory that are actually used.</li>
+</ul>
+</div>
+<div class="cell code" id="iFMkilZBRU9N">
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>q_values <span class="op">=</span> replay_memory.q_values[<span class="dv">0</span>:num_used, :]</span></code></pre></div>
+</div>
+<div class="cell markdown" id="tWKvjbSARU9N">
+<ul>
+<li>For each state, calculate the min / max Q-values and their difference. This will be used to lookup interesting states in the following sections.</li>
+</ul>
+</div>
+<div class="cell code" id="YeDZLOvgRU9N">
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>q_values_min <span class="op">=</span> q_values.<span class="bu">min</span>(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>q_values_max <span class="op">=</span> q_values.<span class="bu">max</span>(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>q_values_dif <span class="op">=</span> q_values_max <span class="op">-</span> q_values_min</span></code></pre></div>
+</div>
+<section id="example-states-highest-reward" class="cell markdown" id="m9bQeREGRU9N">
+<h3>Example States: Highest Reward</h3>
+<ul>
+<li><p>This example shows the states surrounding the state with the highest reward.</p></li>
+<li><p>During the training we limit the rewards to the range [-1, 1] so this basically just gets the first state that has a reward of 1.</p></li>
+</ul>
+</section>
+<div class="cell code" id="At2YibuVRU9N" data-outputId="0ffb9fd6-4d96-449f-d7a4-afe45f746e93" data-scrolled="true">
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span> np.argmax(replay_memory.rewards)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>idx</span></code></pre></div>
+<div class="output execute_result" data-execution_count="32">
+<pre><code>42</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="88EbrChQRU9O">
+<p>This state is where the ball hits the wall so the agent scores a point.</p>
+<p>We can show the surrounding states leading up to and following this state. Note how the Q-values are very close for the different actions, because at this point it really does not matter what the agent does as the reward is already guaranteed. But note how the Q-values decrease significantly after the ball has hit the wall and a point has been scored.</p>
+<p>Also note that the agent uses the Epsilon-greedy policy for taking actions, so there is a small probability that a random action is taken instead of the action with the highest Q-value.</p>
+</div>
+<div class="cell code" id="W_aHtGq-RU9O" data-outputId="864de4e4-7b54-4847-9779-cd73139faaeb">
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="op">-</span><span class="dv">5</span>, <span class="dv">3</span>):</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>    plot_state(idx<span class="op">=</span>idx<span class="op">+</span>i)</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/91e97fb7134036cd2d6cea5349cb9e3d018cb924.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        1.188
+FIRE        1.169
+RIGHT       1.148
+LEFT        1.278 (Action Taken)
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/d83fdcd5f438d46ef5b2deef359c7679829e353f.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        1.220
+FIRE        1.206
+RIGHT       1.163
+LEFT        1.310 (Action Taken)
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/fccb805b9c80cdd95d4b985b01aadbe5dd7f01ab.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        1.360 (Action Taken)
+FIRE        1.271
+RIGHT       1.217
+LEFT        1.274
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/921acfcce4ff777a661d76bdcda4a6ba2f8a6e86.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        1.301
+FIRE        1.335 (Action Taken)
+RIGHT       1.243
+LEFT        1.305
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/b4b08012b8bf60a7a3c96716aeb5888df2ac658a.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        1.307
+FIRE        1.337
+RIGHT       1.255
+LEFT        1.435 (Action Taken)
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/54de368eeffd00d3ee3cf2e32e435dd9476019cd.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        1.362
+FIRE        1.359
+RIGHT       1.260
+LEFT        1.496 (Action Taken)
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/80195041bdfa8213c38d018a58d3d01124afb63b.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.391
+FIRE        0.377
+RIGHT       0.366 (Action Taken)
+LEFT        0.430
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/f3aab0baba9fd412803c4b0fdcbafa853183f1f4.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.394
+FIRE        0.386
+RIGHT       0.369
+LEFT        0.436 (Action Taken)
+
+</code></pre>
+</div>
+</div>
+<section id="example-highest-q-value" class="cell markdown" id="n-fbJB2WRU9O">
+<h3>Example: Highest Q-Value</h3>
+<ul>
+<li>This example shows the states surrounding the one with the highest Q-values. * This means that the agent has high expectation that several points will be scored in the following steps.</li>
+<li>Note that the Q-values decrease significantly after the points have been scored.</li>
+</ul>
+</section>
+<div class="cell code" id="RR5HHzHXRU9O" data-outputId="a93c1570-278e-42bb-ce6a-b7d3f2dd01fc">
+<div class="sourceCode" id="cb61"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span> np.argmax(q_values_max)</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>idx</span></code></pre></div>
+<div class="output execute_result" data-execution_count="34">
+<pre><code>517</code></pre>
+</div>
+</div>
+<div class="cell code" id="2DLY6AfPRU9O" data-outputId="0ced91fa-a3ef-420f-f97d-69caa7d1f1c2" data-scrolled="true">
+<div class="sourceCode" id="cb63"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">5</span>):</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>    plot_state(idx<span class="op">=</span>idx<span class="op">+</span>i)</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/fb7a84ce4b4568b34b30dcf7ec2adacfc32b5e74.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        1.289
+FIRE        1.206
+RIGHT       1.333
+LEFT        1.653 (Action Taken)
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/5c4fe3ecff4454ab3bdd54401bd52e4f632c09de.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        1.073
+FIRE        1.088
+RIGHT       1.106
+LEFT        1.239 (Action Taken)
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/c20e379ff4f39c23cd20b6bdbd260897823410d1.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.563
+FIRE        0.589
+RIGHT       0.629 (Action Taken)
+LEFT        0.553
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/9c950d8394d97ae55d510d5657837a2be1816ad3.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.506
+FIRE        0.514
+RIGHT       0.564 (Action Taken)
+LEFT        0.548
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/94e02164a34f6a3fd2f84ecfbe9919ff4a8ea168.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.503
+FIRE        0.513
+RIGHT       0.559 (Action Taken)
+LEFT        0.520
+
+</code></pre>
+</div>
+</div>
+<section id="example-loss-of-life" class="cell markdown" id="Kx81mZXWRU9P">
+<h3>Example: Loss of Life</h3>
+<ul>
+<li>This example shows the states leading up to a loss of life for the agent.</li>
+</ul>
+</section>
+<div class="cell code" id="o2ZeTHSqRU9P" data-outputId="4badb10f-c747-448d-977f-a31a35973068">
+<div class="sourceCode" id="cb69"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span> np.argmax(replay_memory.end_life)</span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>idx</span></code></pre></div>
+<div class="output execute_result" data-execution_count="36">
+<pre><code>115</code></pre>
+</div>
+</div>
+<div class="cell code" id="eTZgYRlSRU9P" data-outputId="44f8f24f-5e06-4e20-a7d2-ea72796f5334" data-scrolled="false">
+<div class="sourceCode" id="cb71"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="op">-</span><span class="dv">10</span>, <span class="dv">0</span>):</span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>    plot_state(idx<span class="op">=</span>idx<span class="op">+</span>i)</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/4b7387b28341c69d849ff108d565b2caa980de55.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.627 (Action Taken)
+FIRE        0.617
+RIGHT       0.605
+LEFT        0.585
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/6c3944aa7dce694aea4ac735deb8965bd2afa78b.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.585
+FIRE        0.589 (Action Taken)
+RIGHT       0.566
+LEFT        0.564
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/c72eb5d6d3685ebb3d6a3e11e29f033a330ee4b2.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.378
+FIRE        0.380 (Action Taken)
+RIGHT       0.375
+LEFT        0.360
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/e10e3cecbbadee9ca08df6ed4b6abaee136b01ed.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.225
+FIRE        0.232
+RIGHT       0.232
+LEFT        0.236 (Action Taken)
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/b845425a36fa14258ba88022738500b3b4e526a8.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.197
+FIRE        0.203
+RIGHT       0.217 (Action Taken)
+LEFT        0.208
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/c2dae77b3e3066347e5965ead7252b3a4e722d1b.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.184 (Action Taken)
+FIRE        0.171
+RIGHT       0.188
+LEFT        0.183
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/6a15846a0bad2836f96ba0f2ed707ecaca7d70b7.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.187
+FIRE        0.177
+RIGHT       0.194 (Action Taken)
+LEFT        0.191
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/6b1f2d63419950126dea1677e2ac6805d211e62c.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.149 (Action Taken)
+FIRE        0.113
+RIGHT       0.141
+LEFT        0.126
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/8c3c84fcc39220c6b7ef86d7d15d920193da65aa.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.140 (Action Taken)
+FIRE        0.108
+RIGHT       0.132
+LEFT        0.111
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/20780c133b2877b27cc0b2f41af1db0e5e7f324d.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.137 (Action Taken)
+FIRE        0.109
+RIGHT       0.130
+LEFT        0.105
+
+</code></pre>
+</div>
+</div>
+<section id="example-greatest-difference-in-q-values" class="cell markdown" id="KU6O3ntWRU9P">
+<h3>Example: Greatest Difference in Q-Values</h3>
+<ul>
+<li>This example shows the state where there is the greatest difference in Q-values, which means that the agent believes one action will be much more beneficial than another.</li>
+<li>But because the agent uses the Epsilon-greedy policy, it sometimes selects a random action instead.</li>
+</ul>
+</section>
+<div class="cell code" id="KpYO-m7GRU9P" data-outputId="881ffd0c-4778-4e22-da49-2ffcaa11ba5c" data-scrolled="true">
+<div class="sourceCode" id="cb82"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span> np.argmax(q_values_dif)</span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a>idx</span></code></pre></div>
+<div class="output execute_result" data-execution_count="38">
+<pre><code>699</code></pre>
+</div>
+</div>
+<div class="cell code" id="JiOuhrndRU9P" data-outputId="5ba76201-c359-4991-86de-ebae0686f37b">
+<div class="sourceCode" id="cb84"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">5</span>):</span>
+<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a>    plot_state(idx<span class="op">=</span>idx<span class="op">+</span>i)</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/bc7941a9b4c80530561dc2d328eaed29f2fd731c.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.428
+FIRE        0.428
+RIGHT       0.906 (Action Taken)
+LEFT        0.358
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/94846162dd7337a7b11161674ab2699673eef5da.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.391
+FIRE        0.426
+RIGHT       0.849 (Action Taken)
+LEFT        0.311
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/3d3840cb0348b4b9cf7b1528fe708ed61e33f15a.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.413
+FIRE        0.486
+RIGHT       0.852 (Action Taken)
+LEFT        0.306
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/d6b1838c953565cf62e0af1c9753cfb2b2f6f43e.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.409
+FIRE        0.434
+RIGHT       0.737 (Action Taken)
+LEFT        0.332
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/eac7fcae59b1a8fb32c54322842f811c37582270.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.443
+FIRE        0.692 (Action Taken)
+RIGHT       0.585
+LEFT        0.308
+
+</code></pre>
+</div>
+</div>
+<section id="example-smallest-difference-in-q-values" class="cell markdown" id="K8CPMHHhRU9Q">
+<h3>Example: Smallest Difference in Q-Values</h3>
+<ul>
+<li><p>This example shows the state where there is the smallest difference in Q-values, which means that the agent believes it does not really matter which action it selects, as they all have roughly the same expectations for future rewards.</p></li>
+<li><p>The Neural Network estimates these Q-values and they are not precise. The differences in Q-values may be so small that they fall within the error-range of the estimates.</p></li>
+</ul>
+</section>
+<div class="cell code" id="cMOCCbAiRU9Q" data-outputId="b936adb8-eff7-4ae7-e78a-b2fccca6855f">
+<div class="sourceCode" id="cb90"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span> np.argmin(q_values_dif)</span>
+<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a>idx</span></code></pre></div>
+<div class="output execute_result" data-execution_count="40">
+<pre><code>134</code></pre>
+</div>
+</div>
+<div class="cell code" id="BTV5jfvrRU9Q" data-outputId="b7d2728a-e752-42e9-f17c-0ee669f14e21">
+<div class="sourceCode" id="cb92"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">5</span>):</span>
+<span id="cb92-2"><a href="#cb92-2" aria-hidden="true" tabindex="-1"></a>    plot_state(idx<span class="op">=</span>idx<span class="op">+</span>i)</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/9073c6afa7c9d2308e95b8267d7148d367eb5f61.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.600 (Action Taken)
+FIRE        0.595
+RIGHT       0.596
+LEFT        0.599
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/f97bcd9950b9d035820f3e967f04d1bb4c1809fe.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.572
+FIRE        0.566
+RIGHT       0.545
+LEFT        0.704 (Action Taken)
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/0129409b1ee2561fd9bae2c1a042a1dfa23b375b.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.654
+FIRE        0.674
+RIGHT       0.663 (Action Taken)
+LEFT        0.615
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/740d331a16b41606ddba8f2bdd478e32a4b2904b.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.655 (Action Taken)
+FIRE        0.646
+RIGHT       0.719
+LEFT        0.648
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/8bf4d62343d7afc8bc8b6d81c0f0e85406b11602.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Action:     Q-Value:
+====================
+NOOP        0.686 (Action Taken)
+FIRE        0.660
+RIGHT       0.675
+LEFT        0.675
+
+</code></pre>
+</div>
+</div>
+<section id="output-of-convolutional-layers" class="cell markdown" id="sL2M2rHdRU9Q">
+<h2>Output of Convolutional Layers</h2>
+<ul>
+<li><p>The outputs of the convolutional layers can be plotted so we can see how the images from the game-environment are being processed by the Neural Network.</p></li>
+<li><p>This is the helper-function for plotting the output of the convolutional layer with the given name, when inputting the given state from the replay-memory.</p></li>
+</ul>
+</section>
+<div class="cell code" id="c8Q0MukcRU9Q">
+<div class="sourceCode" id="cb98"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_layer_output(model, layer_name, state_index, inverse_cmap<span class="op">=</span><span class="va">False</span>):</span>
+<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb98-3"><a href="#cb98-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Plot the output of a convolutional layer.</span></span>
+<span id="cb98-4"><a href="#cb98-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-5"><a href="#cb98-5" aria-hidden="true" tabindex="-1"></a><span class="co">    :param model: An instance of the NeuralNetwork-class.</span></span>
+<span id="cb98-6"><a href="#cb98-6" aria-hidden="true" tabindex="-1"></a><span class="co">    :param layer_name: Name of the convolutional layer.</span></span>
+<span id="cb98-7"><a href="#cb98-7" aria-hidden="true" tabindex="-1"></a><span class="co">    :param state_index: Index into the replay-memory for a state that</span></span>
+<span id="cb98-8"><a href="#cb98-8" aria-hidden="true" tabindex="-1"></a><span class="co">                        will be input to the Neural Network.</span></span>
+<span id="cb98-9"><a href="#cb98-9" aria-hidden="true" tabindex="-1"></a><span class="co">    :param inverse_cmap: Boolean whether to inverse the color-map.</span></span>
+<span id="cb98-10"><a href="#cb98-10" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb98-11"><a href="#cb98-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-12"><a href="#cb98-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the given state-array from the replay-memory.</span></span>
+<span id="cb98-13"><a href="#cb98-13" aria-hidden="true" tabindex="-1"></a>    state <span class="op">=</span> replay_memory.states[state_index]</span>
+<span id="cb98-14"><a href="#cb98-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb98-15"><a href="#cb98-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the output tensor for the given layer inside the TensorFlow graph.</span></span>
+<span id="cb98-16"><a href="#cb98-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This is not the value-contents but merely a reference to the tensor.</span></span>
+<span id="cb98-17"><a href="#cb98-17" aria-hidden="true" tabindex="-1"></a>    layer_tensor <span class="op">=</span> model.get_layer_tensor(layer_name<span class="op">=</span>layer_name)</span>
+<span id="cb98-18"><a href="#cb98-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb98-19"><a href="#cb98-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the actual value of the tensor by feeding the state-data</span></span>
+<span id="cb98-20"><a href="#cb98-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># to the TensorFlow graph and calculating the value of the tensor.</span></span>
+<span id="cb98-21"><a href="#cb98-21" aria-hidden="true" tabindex="-1"></a>    values <span class="op">=</span> model.get_tensor_value(tensor<span class="op">=</span>layer_tensor, state<span class="op">=</span>state)</span>
+<span id="cb98-22"><a href="#cb98-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-23"><a href="#cb98-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Number of image channels output by the convolutional layer.</span></span>
+<span id="cb98-24"><a href="#cb98-24" aria-hidden="true" tabindex="-1"></a>    num_images <span class="op">=</span> values.shape[<span class="dv">3</span>]</span>
+<span id="cb98-25"><a href="#cb98-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-26"><a href="#cb98-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Number of grid-cells to plot.</span></span>
+<span id="cb98-27"><a href="#cb98-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Rounded-up, square-root of the number of filters.</span></span>
+<span id="cb98-28"><a href="#cb98-28" aria-hidden="true" tabindex="-1"></a>    num_grids <span class="op">=</span> math.ceil(math.sqrt(num_images))</span>
+<span id="cb98-29"><a href="#cb98-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-30"><a href="#cb98-30" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create figure with a grid of sub-plots.</span></span>
+<span id="cb98-31"><a href="#cb98-31" aria-hidden="true" tabindex="-1"></a>    fig, axes <span class="op">=</span> plt.subplots(num_grids, num_grids, figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>))</span>
+<span id="cb98-32"><a href="#cb98-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-33"><a href="#cb98-33" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Dim. of each image:&quot;</span>, values.shape)</span>
+<span id="cb98-34"><a href="#cb98-34" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb98-35"><a href="#cb98-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> inverse_cmap:</span>
+<span id="cb98-36"><a href="#cb98-36" aria-hidden="true" tabindex="-1"></a>        cmap <span class="op">=</span> <span class="st">&#39;gray_r&#39;</span></span>
+<span id="cb98-37"><a href="#cb98-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb98-38"><a href="#cb98-38" aria-hidden="true" tabindex="-1"></a>        cmap <span class="op">=</span> <span class="st">&#39;gray&#39;</span></span>
+<span id="cb98-39"><a href="#cb98-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-40"><a href="#cb98-40" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot the outputs of all the channels in the conv-layer.</span></span>
+<span id="cb98-41"><a href="#cb98-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes.flat):</span>
+<span id="cb98-42"><a href="#cb98-42" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Only plot the valid image-channels.</span></span>
+<span id="cb98-43"><a href="#cb98-43" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> i <span class="op">&lt;</span> num_images:</span>
+<span id="cb98-44"><a href="#cb98-44" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Get the image for the i&#39;th output channel.</span></span>
+<span id="cb98-45"><a href="#cb98-45" aria-hidden="true" tabindex="-1"></a>            img <span class="op">=</span> values[<span class="dv">0</span>, :, :, i]</span>
+<span id="cb98-46"><a href="#cb98-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-47"><a href="#cb98-47" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Plot image.</span></span>
+<span id="cb98-48"><a href="#cb98-48" aria-hidden="true" tabindex="-1"></a>            ax.imshow(img, interpolation<span class="op">=</span><span class="st">&#39;nearest&#39;</span>, cmap<span class="op">=</span>cmap)</span>
+<span id="cb98-49"><a href="#cb98-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-50"><a href="#cb98-50" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Remove ticks from the plot.</span></span>
+<span id="cb98-51"><a href="#cb98-51" aria-hidden="true" tabindex="-1"></a>        ax.set_xticks([])</span>
+<span id="cb98-52"><a href="#cb98-52" aria-hidden="true" tabindex="-1"></a>        ax.set_yticks([])</span>
+<span id="cb98-53"><a href="#cb98-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb98-54"><a href="#cb98-54" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Ensure the plot is shown correctly with multiple plots</span></span>
+<span id="cb98-55"><a href="#cb98-55" aria-hidden="true" tabindex="-1"></a>    <span class="co"># in a single Notebook cell.</span></span>
+<span id="cb98-56"><a href="#cb98-56" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code></pre></div>
+</div>
+<section id="game-state" class="cell markdown" id="jJmrsS1zRU9Q">
+<h3>Game State</h3>
+<p>This is the state that is being input to the Neural Network. The image on the left is the last image from the game-environment. The image on the right is the processed motion-trace that shows the trajectories of objects in the game-environment.</p>
+</section>
+<div class="cell code" id="G0F5a-LLRU9R" data-outputId="97e98980-3679-4364-dc2c-49857a9f9ce2" data-scrolled="true">
+<div class="sourceCode" id="cb99"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>idx <span class="op">=</span> np.argmax(q_values_max)</span>
+<span id="cb99-2"><a href="#cb99-2" aria-hidden="true" tabindex="-1"></a>plot_state(idx<span class="op">=</span>idx, print_q<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/fb7a84ce4b4568b34b30dcf7ec2adacfc32b5e74.png" /></p>
+</div>
+</div>
+<section id="output-of-convolutional-layer-1" class="cell markdown" id="9POg6XPwRU9R">
+<h3>Output of Convolutional Layer 1</h3>
+<p>This shows the images that are output by the 1st convolutional layer, when inputting the above state to the Neural Network. There are 16 output channels of this convolutional layer.</p>
+<p>Note that you can invert the colors by setting <code>inverse_cmap=True</code> in the parameters to this function.</p>
+</section>
+<div class="cell code" id="uICm-LBERU9R" data-outputId="e780f4bd-8248-41e2-dfea-7244a8db19e2" data-scrolled="false">
+<div class="sourceCode" id="cb100"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a>plot_layer_output(model<span class="op">=</span>model, layer_name<span class="op">=</span><span class="st">&#39;layer_conv1&#39;</span>, state_index<span class="op">=</span>idx, inverse_cmap<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Dim. of each image: (1, 53, 40, 16)
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/aa25181e9d2cfeb9643e2cfb2aafef2c718c16ac.png" /></p>
+</div>
+</div>
+<section id="output-of-convolutional-layer-2" class="cell markdown" id="YfyW2sURRU9R">
+<h3>Output of Convolutional Layer 2</h3>
+<p>These are the images output by the 2nd convolutional layer, when inputting the above state to the Neural Network. There are 32 output channels of this convolutional layer.</p>
+</section>
+<div class="cell code" id="pEkHWLucRU9R" data-outputId="4f17b5b6-8ac5-4889-c131-b7109984f162" data-scrolled="true">
+<div class="sourceCode" id="cb102"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a>plot_layer_output(model<span class="op">=</span>model, layer_name<span class="op">=</span><span class="st">&#39;layer_conv2&#39;</span>, state_index<span class="op">=</span>idx, inverse_cmap<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Dim. of each image: (1, 27, 20, 32)
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/39653b06ab0e74c5e5af6fbf07f0d074c2d2b994.png" /></p>
+</div>
+</div>
+<section id="output-of-convolutional-layer-3" class="cell markdown" id="nUAX7F9CRU9R">
+<h3>Output of Convolutional Layer 3</h3>
+<p>These are the images output by the 3rd convolutional layer, when inputting the above state to the Neural Network. There are 64 output channels of this convolutional layer.</p>
+<p>All these images are flattened to a one-dimensional array (or tensor) which is then used as the input to a fully-connected layer in the Neural Network.</p>
+<p>During the training-process, the Neural Network has learnt what convolutional filters to apply to the images from the game-environment so as to produce these images, because they have proven to be useful when estimating Q-values.</p>
+<p>Can you see what it is that the Neural Network has learned to detect in these images?</p>
+</section>
+<div class="cell code" id="4GhKgOEZRU9S" data-outputId="7e34b04a-adec-4cab-91a8-ab876c043e0e" data-scrolled="true">
+<div class="sourceCode" id="cb104"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a>plot_layer_output(model<span class="op">=</span>model, layer_name<span class="op">=</span><span class="st">&#39;layer_conv3&#39;</span>, state_index<span class="op">=</span>idx, inverse_cmap<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Dim. of each image: (1, 27, 20, 64)
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/14f13af568a1f1c7cda47e0c9624300e3a9799ed.png" /></p>
+</div>
+</div>
+<section id="weights-for-convolutional-layers" class="cell markdown" id="Nv2JqNLBhy1j">
+<h2>Weights for Convolutional Layers</h2>
+<ul>
+<li>We can also plot the weights of the convolutional layers in the Neural Network.</li>
+<li>These are the weights that are being optimized so as to improve the ability of the Neural Network to estimate Q-values.</li>
+<li>Tutorial #02 explains in greater detail what convolutional weights are.</li>
+<li>There are also weights for the fully-connected layers but they are not shown here.</li>
+</ul>
+<p>This is the helper-function for plotting the weights of a convoluational layer.</p>
+</section>
+<div class="cell code" id="sGhd9MqSRU9S">
+<div class="sourceCode" id="cb106"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_conv_weights(model, layer_name, input_channel<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Plot the weights for a convolutional layer.</span></span>
+<span id="cb106-4"><a href="#cb106-4" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb106-5"><a href="#cb106-5" aria-hidden="true" tabindex="-1"></a><span class="co">    :param model: An instance of the NeuralNetwork-class.</span></span>
+<span id="cb106-6"><a href="#cb106-6" aria-hidden="true" tabindex="-1"></a><span class="co">    :param layer_name: Name of the convolutional layer.</span></span>
+<span id="cb106-7"><a href="#cb106-7" aria-hidden="true" tabindex="-1"></a><span class="co">    :param input_channel: Plot the weights for this input-channel.</span></span>
+<span id="cb106-8"><a href="#cb106-8" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb106-9"><a href="#cb106-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-10"><a href="#cb106-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the variable for the weights of the given layer.</span></span>
+<span id="cb106-11"><a href="#cb106-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This is a reference to the variable inside TensorFlow,</span></span>
+<span id="cb106-12"><a href="#cb106-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># not its actual value.</span></span>
+<span id="cb106-13"><a href="#cb106-13" aria-hidden="true" tabindex="-1"></a>    weights_variable <span class="op">=</span> model.get_weights_variable(layer_name<span class="op">=</span>layer_name)</span>
+<span id="cb106-14"><a href="#cb106-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb106-15"><a href="#cb106-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Retrieve the values of the weight-variable from TensorFlow.</span></span>
+<span id="cb106-16"><a href="#cb106-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># The format of this 4-dim tensor is determined by the</span></span>
+<span id="cb106-17"><a href="#cb106-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># TensorFlow API. See Tutorial #02 for more details.</span></span>
+<span id="cb106-18"><a href="#cb106-18" aria-hidden="true" tabindex="-1"></a>    w <span class="op">=</span> model.get_variable_value(variable<span class="op">=</span>weights_variable)</span>
+<span id="cb106-19"><a href="#cb106-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-20"><a href="#cb106-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the weights for the given input-channel.</span></span>
+<span id="cb106-21"><a href="#cb106-21" aria-hidden="true" tabindex="-1"></a>    w_channel <span class="op">=</span> w[:, :, input_channel, :]</span>
+<span id="cb106-22"><a href="#cb106-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb106-23"><a href="#cb106-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Number of output-channels for the conv. layer.</span></span>
+<span id="cb106-24"><a href="#cb106-24" aria-hidden="true" tabindex="-1"></a>    num_output_channels <span class="op">=</span> w_channel.shape[<span class="dv">2</span>]</span>
+<span id="cb106-25"><a href="#cb106-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-26"><a href="#cb106-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the lowest and highest values for the weights.</span></span>
+<span id="cb106-27"><a href="#cb106-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This is used to correct the colour intensity across</span></span>
+<span id="cb106-28"><a href="#cb106-28" aria-hidden="true" tabindex="-1"></a>    <span class="co"># the images so they can be compared with each other.</span></span>
+<span id="cb106-29"><a href="#cb106-29" aria-hidden="true" tabindex="-1"></a>    w_min <span class="op">=</span> np.<span class="bu">min</span>(w_channel)</span>
+<span id="cb106-30"><a href="#cb106-30" aria-hidden="true" tabindex="-1"></a>    w_max <span class="op">=</span> np.<span class="bu">max</span>(w_channel)</span>
+<span id="cb106-31"><a href="#cb106-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-32"><a href="#cb106-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This is used to center the colour intensity at zero.</span></span>
+<span id="cb106-33"><a href="#cb106-33" aria-hidden="true" tabindex="-1"></a>    abs_max <span class="op">=</span> <span class="bu">max</span>(<span class="bu">abs</span>(w_min), <span class="bu">abs</span>(w_max))</span>
+<span id="cb106-34"><a href="#cb106-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-35"><a href="#cb106-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Print statistics for the weights.</span></span>
+<span id="cb106-36"><a href="#cb106-36" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Min:  </span><span class="sc">{0:.5f}</span><span class="st">, Max:   </span><span class="sc">{1:.5f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(w_min, w_max))</span>
+<span id="cb106-37"><a href="#cb106-37" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Mean: </span><span class="sc">{0:.5f}</span><span class="st">, Stdev: </span><span class="sc">{1:.5f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(w_channel.mean(),</span>
+<span id="cb106-38"><a href="#cb106-38" aria-hidden="true" tabindex="-1"></a>                                                 w_channel.std()))</span>
+<span id="cb106-39"><a href="#cb106-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-40"><a href="#cb106-40" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Number of grids to plot.</span></span>
+<span id="cb106-41"><a href="#cb106-41" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Rounded-up, square-root of the number of output-channels.</span></span>
+<span id="cb106-42"><a href="#cb106-42" aria-hidden="true" tabindex="-1"></a>    num_grids <span class="op">=</span> math.ceil(math.sqrt(num_output_channels))</span>
+<span id="cb106-43"><a href="#cb106-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-44"><a href="#cb106-44" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create figure with a grid of sub-plots.</span></span>
+<span id="cb106-45"><a href="#cb106-45" aria-hidden="true" tabindex="-1"></a>    fig, axes <span class="op">=</span> plt.subplots(num_grids, num_grids)</span>
+<span id="cb106-46"><a href="#cb106-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-47"><a href="#cb106-47" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Plot all the filter-weights.</span></span>
+<span id="cb106-48"><a href="#cb106-48" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, ax <span class="kw">in</span> <span class="bu">enumerate</span>(axes.flat):</span>
+<span id="cb106-49"><a href="#cb106-49" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Only plot the valid filter-weights.</span></span>
+<span id="cb106-50"><a href="#cb106-50" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> i <span class="op">&lt;</span> num_output_channels:</span>
+<span id="cb106-51"><a href="#cb106-51" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Get the weights for the i&#39;th filter of this input-channel.</span></span>
+<span id="cb106-52"><a href="#cb106-52" aria-hidden="true" tabindex="-1"></a>            img <span class="op">=</span> w_channel[:, :, i]</span>
+<span id="cb106-53"><a href="#cb106-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-54"><a href="#cb106-54" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Plot image.</span></span>
+<span id="cb106-55"><a href="#cb106-55" aria-hidden="true" tabindex="-1"></a>            ax.imshow(img, vmin<span class="op">=-</span>abs_max, vmax<span class="op">=</span>abs_max,</span>
+<span id="cb106-56"><a href="#cb106-56" aria-hidden="true" tabindex="-1"></a>                      interpolation<span class="op">=</span><span class="st">&#39;nearest&#39;</span>, cmap<span class="op">=</span><span class="st">&#39;seismic&#39;</span>)</span>
+<span id="cb106-57"><a href="#cb106-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-58"><a href="#cb106-58" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Remove ticks from the plot.</span></span>
+<span id="cb106-59"><a href="#cb106-59" aria-hidden="true" tabindex="-1"></a>        ax.set_xticks([])</span>
+<span id="cb106-60"><a href="#cb106-60" aria-hidden="true" tabindex="-1"></a>        ax.set_yticks([])</span>
+<span id="cb106-61"><a href="#cb106-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb106-62"><a href="#cb106-62" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Ensure the plot is shown correctly with multiple plots</span></span>
+<span id="cb106-63"><a href="#cb106-63" aria-hidden="true" tabindex="-1"></a>    <span class="co"># in a single Notebook cell.</span></span>
+<span id="cb106-64"><a href="#cb106-64" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code></pre></div>
+</div>
+<section id="weights-for-convolutional-layer-1" class="cell markdown" id="UYGeN-o0RU9S">
+<h3>Weights for Convolutional Layer 1</h3>
+<p>These are the weights of the first convolutional layer of the Neural Network, with respect to the first input channel of the state. That is, these are the weights that are used on the image from the game-environment. Some basic statistics are also shown.</p>
+<p>Note how the weights are more negative (blue) than positive (red). It is unclear why this happens as these weights are found through optimization. It is apparently beneficial for the following layers to have this processing with more negative weights in the first convolutional layer.</p>
+</section>
+<div class="cell code" id="ExD3YzNiRU9S" data-outputId="d781eaf4-eb0c-41f4-c81e-8b71634765c6" data-scrolled="true">
+<div class="sourceCode" id="cb107"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a>plot_conv_weights(model<span class="op">=</span>model, layer_name<span class="op">=</span><span class="st">&#39;layer_conv1&#39;</span>, input_channel<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Min:  -0.24494, Max:   0.13658
+Mean: -0.01729, Stdev: 0.06023
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/17c951e84dadd072fe40d25ed5e276dd6927cc3b.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="maOncE_1RU9T">
+<p>We can also plot the convolutional weights for the second input channel, that is, the motion-trace of the game-environment. Once again we see that the negative weights (blue) have a much greater magnitude than the positive weights (red).</p>
+</div>
+<div class="cell code" id="zBzuG1w3RU9T" data-outputId="dc7d611d-577c-43d2-8be5-385c351240dd" data-scrolled="true">
+<div class="sourceCode" id="cb109"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb109-1"><a href="#cb109-1" aria-hidden="true" tabindex="-1"></a>plot_conv_weights(model<span class="op">=</span>model, layer_name<span class="op">=</span><span class="st">&#39;layer_conv1&#39;</span>, input_channel<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Min:  -0.56904, Max:   0.06957
+Mean: -0.05132, Stdev: 0.12694
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/5046fb7bcb6d0f099d5535b67808bcdd1325339f.png" /></p>
+</div>
+</div>
+<section id="weights-for-convolutional-layer-2" class="cell markdown" id="LqZY2foCRU9T">
+<h3>Weights for Convolutional Layer 2</h3>
+<p>These are the weights of the 2nd convolutional layer in the Neural Network. There are 16 input channels and 32 output channels of this layer. You can change the number for the input-channel to see the associated weights.</p>
+<p>Note how the weights are more balanced between positive (red) and negative (blue) compared to the weights for the 1st convolutional layer above.</p>
+</section>
+<div class="cell code" id="jyiB-HK3RU9T" data-outputId="85fee578-0c5c-424f-c1d9-57b7123c0875">
+<div class="sourceCode" id="cb111"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a>plot_conv_weights(model<span class="op">=</span>model, layer_name<span class="op">=</span><span class="st">&#39;layer_conv2&#39;</span>, input_channel<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Min:  -0.24590, Max:   0.14826
+Mean: -0.00605, Stdev: 0.06365
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/7a19b47d2cc7e68c6ef4c01f9e637024e13da036.png" /></p>
+</div>
+</div>
+<section id="weights-for-convolutional-layer-3" class="cell markdown" id="e5Eg5KahRU9T">
+<h3>Weights for Convolutional Layer 3</h3>
+<p>These are the weights of the 3rd convolutional layer in the Neural Network. There are 32 input channels and 64 output channels of this layer. You can change the number for the input-channel to see the associated weights.</p>
+<p>Note again how the weights are more balanced between positive (red) and negative (blue) compared to the weights for the 1st convolutional layer above.</p>
+</section>
+<div class="cell code" id="MzTt_hj5RU9U" data-outputId="b40cb58c-29b1-44b0-daac-2cc7fc23bd01" data-scrolled="true">
+<div class="sourceCode" id="cb113"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a>plot_conv_weights(model<span class="op">=</span>model, layer_name<span class="op">=</span><span class="st">&#39;layer_conv3&#39;</span>, input_channel<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Min:  -0.25325, Max:   0.17733
+Mean: -0.03257, Stdev: 0.07194
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_676d258efaa44980b6557726b18c6e63/42cb20eddc291052ebfd6b7ed55af27c013f61af.png" /></p>
+</div>
+</div>
+<section id="discussion" class="cell markdown" id="PzjoImaMRU9U">
+<h2>Discussion</h2>
+<ul>
+<li><p>We trained an agent to play old Atari games quite well using Reinforcement Learning. Recent improvements to the training algorithm have improved the performance significantly.</p></li>
+<li><p>But is this true human-like intelligence? The answer is clearly NO!</p></li>
+<li><p>Reinforcement Learning in its current form is a crude numerical algorithm for connecting visual images, actions, rewards and penalties when there is a time-lag between the signals.</p></li>
+<li><p>The learning is based on trial-and-error and cannot do logical reasoning like a human.</p></li>
+<li><p>The agent has no sense of "self" while a human has an understanding of what part of the game-environment it is controlling, so a human can reason logically like this: "(A) I control the paddle, and (B) I must avoid dying which happens when the ball flies past the paddle, so (C) I must move the paddle to hit the ball, and (D) this automatically scores points when the ball smashes bricks in the wall".</p></li>
+<li><p>A human would first learn these basic logical rules of the game - and then try and refine the eye-hand coordination to play the game better.</p></li>
+<li><p>Reinforcement Learning has no real comprehension of what is going on in the game and merely works on improving the eye-hand coordination until it gets lucky and does the right thing to score more points.</p></li>
+<li><p>Furthermore, the training of the Reinforcement Learning algorithm required almost 150 hours of computation which played the game at high speeds.</p></li>
+<li><p>If the game was played at normal real-time speeds then it would have taken more than 1700 hours to train the agent, which is more than 70 days and nights.</p></li>
+<li><p>Logical reasoning would allow for much faster learning than Reinforcement Learning, and it would be able to solve much more complicated problems than simple eye-hand coordination.</p></li>
+<li><p>I am skeptical if someone will be able to create true human-like intelligence from Reinforcement Learning algorithms.</p></li>
+<li><p>Does that mean Reinforcement Learning is completely worthless? No, it has real-world applications that currently cannot be solved by other methods.</p></li>
+<li><p>Another point of criticism is the use of Neural Networks. The majority of the research in Reinforcement Learning is actually spent on trying to stabilize the training of the Neural Network using various tricks.</p></li>
+<li><p>This is a waste of research time and strongly indicates that Neural Networks may not be a very good Machine Learning model compared to the human brain.</p></li>
+</ul>
+</section>
+<section id="exercises--research-ideas-bonus" class="cell markdown" id="S5bQkQ1PRU9U">
+<h2>Exercises &amp; Research Ideas (Bonus)</h2>
+<p>Below are suggestions for exercises and experiments that may help improve your skills with TensorFlow and Reinforcement Learning. Some of these ideas can easily be extended into full research problems that would help the community if you can solve them.</p>
+<p>You should keep a log of your experiments, describing for each experiment the settings you tried and the results. You should also save the source-code and checkpoints / log-files.</p>
+<p>It takes so much time to run these experiments, so please share your results with the rest of the community. Even if an experiment failed to produce anything useful, it will be helpful to others so they know not to redo the same experiment.</p>
+<p><a href="https://github.com/Hvass-Labs/TensorFlow-Tutorials/issues/32">Thread on GitHub for discussing these experiments</a></p>
+<p>You may want to backup this Notebook and the other files before making any changes.</p>
+<p>You may find it helpful to add more command-line parameters to <code>reinforcement_learning.py</code> so you don't have to edit the source-code for testing other parameters.</p>
+<ul>
+<li>Change the epsilon-probability during testing to e.g. 0.001 or 0.05. Which gives the best results? Could you use this value during training? Why/not?</li>
+<li>Try and change the game-environment to Space Invaders and re-run this Notebook. The hyper-parameters such as the learning-rate were tuned for Breakout. Can you make some kind of adaptive learning-rate that would work better for both Breakout and Space Invaders? What about the other hyper-parameters? What about other games?</li>
+<li>Try different architectures for the Neural Network. You will need to restart the training because the checkpoints cannot be reused for other architectures. You will need to train the agent for several days with each new architecture so as to properly assess its performance.</li>
+<li>The replay-memory throws away all data after optimization of the Neural Network. Can you make it reuse the data somehow? The ReplayMemory-class has the function <code>estimate_all_q_values()</code> which may be helpful.</li>
+<li>The reward is limited to -1 and 1 in the function <code>ReplayMemory.add()</code> so as to stabilize the training. This means the agent cannot distinguish between small and large rewards. Can you use batch normalization to fix this problem, so you can use the actual reward values?</li>
+<li>Can you improve the training by adding L2-regularization or dropout?</li>
+<li>Try using other optimizers for the Neural Network. Does it help with the training speed or stability?</li>
+<li>Let the agent take up to 30 random actions at the beginning of each new episode. This is used in some research papers to further randomize the game-environment, so the agent cannot memorize the first sequence of actions.</li>
+<li>Try and save the game at regular intervals. If the agent dies, then you can reload the last saved game. Would this help training the agent faster and better, because it does not need to play the game from the beginning?</li>
+<li>There are some invalid actions available to the agent in OpenAI Gym. Does it improve the training if you only allow the valid actions from the game-environment?</li>
+<li>Does the MotionTracer work for other games? Can you improve on the MotionTracer?</li>
+<li>Try and use the last 4 image-frames from the game instead of the MotionTracer.</li>
+<li>Try larger and smaller sizes for the replay memory.</li>
+<li>Try larger and smaller discount rates for updating the Q-values.</li>
+<li>If you look closely in the states and actions that are display above, you will note that the agent has sometimes taken actions that do not correspond to the movement of the paddle. For example, the action might be LEFT but the paddle has either not moved at all, or it has moved right instead. Is this a bug in the source-code for this tutorial, or is it a bug in OpenAI Gym, or is it a bug in the underlying Atari Learning Environment? Does it matter?</li>
+</ul>
+</section>
+<section id="license-mit" class="cell markdown" id="tZu17oJjRU9U">
+<h2>License (MIT)</h2>
+<p>Copyright (c) 2017 by <a href="http://www.hvass-labs.org/">Magnus Erik Hvass Pedersen</a></p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</section>
+</body>
+</html>
